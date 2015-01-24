@@ -28,6 +28,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	void ConfirmScreenshotPosition(float absTime, int camIndex, Quaternion rotationOffset, string name) {
 		// This should take a screenshot (turn it into a texture? Alongside pixel positions of all relevant objects?)
 		camManager.SetCamera(camIndex);
+		animation.Play(name);
 		curState = animation[name];
 		curState.time = absTime;
 		curState.speed = 0;
@@ -95,6 +96,13 @@ public class SynchronisedPlayback : MonoBehaviour {
 	void RemFastForward() {
 		targetSpeed = 5;
 	}
+	public float synchronisedTime;
+	public float synchronisedAbsTime;
+	[RPC]
+	void UpdateNormalisedTime(float normTime, float absTime) {
+		synchronisedTime = normTime;
+		synchronisedAbsTime = absTime;
+	}
 
 	void Update() {
 		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
@@ -106,6 +114,9 @@ public class SynchronisedPlayback : MonoBehaviour {
 			} else {
 				TakeScreenshot();
 			}
+		}
+		if(camManager.GetMode() == CameraManager.CameraMode.Eyes && curState != null) {
+			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, curState.normalizedTime, curState.time);
 		}
 
 	}
