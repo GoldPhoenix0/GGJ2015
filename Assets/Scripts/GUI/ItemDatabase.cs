@@ -22,7 +22,8 @@ public class ItemDatabase : MonoBehaviour
     {
         string searchString = inputField.text;
 
-        List<string> results = SearchResults(database, searchString);
+        //List<string> results = SearchResults(database, searchString);
+        List<string> results = dbManager.SearchKeywords(searchString);
 
         // Display the results as separate buttons on a list
         scrollList.PopulateList(results);

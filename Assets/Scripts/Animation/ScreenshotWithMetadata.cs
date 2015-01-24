@@ -7,6 +7,7 @@ public class GeneralMetadata {
 	public string title;
 	public string body;
 	public Texture icon;
+    public string[] keywords;
     public float startTime;
     public float endTime;
     public string animationName;

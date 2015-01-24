@@ -42,6 +42,51 @@ public class DatabaseManager : MonoBehaviour
         return database[key].icon;
     }
 
+    public List<string> SearchKeywords(string searchTerm)
+    {
+        List<string> keysFound = new List<string>();
+        string temp = "";
+
+        foreach(KeyValuePair<string, GeneralMetadata> gm in database)
+        {
+            temp = SearchSingleMetadata(searchTerm, gm.Value);
+
+            if(temp != "")
+            {
+                keysFound.Add(temp);
+                temp = "";
+            }
+        }
+
+        return keysFound;
+    }
+
+    private string SearchSingleMetadata(string searchTerm, GeneralMetadata metadata)
+    {
+        bool found = false;
+
+        foreach(string keyword in metadata.keywords)
+        {
+            if(StringCompareIgnoreCase(searchTerm, keyword))
+            {
+                found = true;
+                break;
+            }
+        }
+
+        if(found || StringCompareIgnoreCase(searchTerm, metadata.title))
+        {
+            return metadata.title;
+        }
+
+        return "";
+    }
+
+    private bool StringCompareIgnoreCase(string str1, string str2)
+    {
+        return (str1.ToLower() == str2.ToLower());
+    }
+
     private void ReadFile(TextAsset csv)
     {
         string[] words = csv.text.Split('|');
@@ -58,7 +103,12 @@ public class DatabaseManager : MonoBehaviour
                 GeneralMetadata entry = new GeneralMetadata();
                 // [0] = Heading
                 // [1] = Body
-                // [2] = Icon (Not IMPLEMENTED)
+                // [2] = Icon
+                // [3] = Keywords
+                // [4] = Start Animation
+                // [5] = End Animation
+                // [6] = Animation Name
+                // [7] = Camera Index
                 string[] vals = line.Split('^');
 
                 entry.title = vals[0];
@@ -68,7 +118,18 @@ public class DatabaseManager : MonoBehaviour
                 {
                     entry.icon = (Texture)Resources.Load(vals[2], typeof(Texture));
                 }
-                if(vals[3] == "" || !float.TryParse(vals[3], out f))
+
+                if(vals[3] != "")
+                {
+                    //split keywords into comma separated items
+                    entry.keywords = line.Split(',');
+                }
+                else
+                {
+                    entry.keywords = new string[0];
+                }
+
+                if(vals[4] == "" || !float.TryParse(vals[4], out f))
                 {
                     entry.startTime = -1;
                 }
@@ -76,7 +137,7 @@ public class DatabaseManager : MonoBehaviour
                 {
                     entry.startTime = f;
                 }
-                if(vals[4] == "" || !float.TryParse(vals[4], out f))
+                if(vals[5] == "" || !float.TryParse(vals[5], out f))
                 {
                     entry.endTime = -1;
                 }
@@ -84,11 +145,11 @@ public class DatabaseManager : MonoBehaviour
                 {
                     entry.endTime = f;
                 }
-                if(vals[5] != "")
+                if(vals[6] != "")
                 {
-                    entry.animationName = vals[5];
+                    entry.animationName = vals[6];
                 }
-                if(vals[6] == "" || int.TryParse(vals[6], out i))
+                if(vals[7] == "" || int.TryParse(vals[7], out i))
                 {
                     entry.cameraIndex = -1;
                 }
