@@ -4106,7 +4106,15 @@ MonoBehaviour:
   camManager: {fileID: 2087779060}
   detectionRegistry: {fileID: 1624452219}
   viewer: {fileID: 1796834529}
-  defName: WalkAndNot
+  currentData:
+    title: 1024127nils_pz.ftg
+    body: 
+    icon: {fileID: 0}
+    keywords: []
+    startTime: 0
+    endTime: 0
+    animationName: WalkAndNot
+    cameraIndex: 0
   synchronisedTime: 0
   synchronisedAbsTime: 0
 --- !u!114 &1796834529

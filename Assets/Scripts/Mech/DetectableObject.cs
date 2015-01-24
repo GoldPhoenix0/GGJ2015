@@ -7,6 +7,8 @@ public class DetectableObject : MonoBehaviour {
 
 	public string metadataKey;
 	public Renderer myRender;
+	public DetectableObjectRegistry reg;
+
 
 	void Start() {
 		if(myRender == null) {
@@ -14,6 +16,9 @@ public class DetectableObject : MonoBehaviour {
 		}
 		if(myRender == null) {
 			enabled = false;
+		}
+		if(reg) {
+			reg.RegisterDetectable(this);
 		}
 	}
 

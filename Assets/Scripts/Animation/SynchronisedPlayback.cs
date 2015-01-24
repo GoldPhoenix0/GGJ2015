@@ -40,21 +40,18 @@ public class SynchronisedPlayback : MonoBehaviour {
 	public ScreenshotWithMetadata lastScreenshot;
 
 	public void SelectFootage(GeneralMetadata data) {
-
+		currentData = data;
 	}
 
-	[SerializeField] string defName;
+	[SerializeField] GeneralMetadata currentData;
 	public void Play() {
 		if(Network.peerType != NetworkPeerType.Disconnected) {
-			networkView.RPC("RemPlay", RPCMode.Others, defName, 0, -1, -1);
+			networkView.RPC("RemPlay", RPCMode.Others, currentData.animationName, currentData.cameraIndex, currentData.startTime, currentData.endTime);
 		} else {
-			RemPlay(defName, 0, -1, -1);
+			RemPlay(currentData.animationName, currentData.cameraIndex, currentData.startTime, currentData.endTime);
 		}
 	}
-	/*
-	public void Play(string name, int cameraIndex) {
-		networkView.RPC("RemPlay", RPCMode.Others, name, cameraIndex);
-	}*/
+
 	[RPC]
 	void RemPlay(string name, int cameraIndex, float startTime, float endTime) {
 		if(!animation.isPlaying) {
@@ -64,6 +61,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 		index = cameraIndex;
 		camManager.SetCamera(cameraIndex);
 		curState = animation[name];
+		curState.time = startTime;
 		targetSpeed = 1;
 	}
 	public void Pause() {
