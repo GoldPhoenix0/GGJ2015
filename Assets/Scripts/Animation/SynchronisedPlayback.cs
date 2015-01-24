@@ -39,12 +39,16 @@ public class SynchronisedPlayback : MonoBehaviour {
 
 	public ScreenshotWithMetadata lastScreenshot;
 
+	public void SelectFootage(GeneralMetadata data) {
+
+	}
+
 	[SerializeField] string defName;
 	public void Play() {
 		if(Network.peerType != NetworkPeerType.Disconnected) {
-			networkView.RPC("RemPlay", RPCMode.Others, defName, 0);
+			networkView.RPC("RemPlay", RPCMode.Others, defName, 0, -1, -1);
 		} else {
-			RemPlay(defName, 0);
+			RemPlay(defName, 0, -1, -1);
 		}
 	}
 	/*
@@ -52,10 +56,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 		networkView.RPC("RemPlay", RPCMode.Others, name, cameraIndex);
 	}*/
 	[RPC]
-	void RemPlay(string name, int cameraIndex) {
+	void RemPlay(string name, int cameraIndex, float startTime, float endTime) {
 		if(!animation.isPlaying) {
 			animation.Play(name);
 		}
+		// Stop the animation, do some voodoo to treat start and end properly (trick out the absolute and relative time values)
 		index = cameraIndex;
 		camManager.SetCamera(cameraIndex);
 		curState = animation[name];
@@ -95,6 +100,29 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[RPC]
 	void RemFastForward() {
 		targetSpeed = 5;
+	}
+
+	public void StepForward() {
+		if(Network.peerType != NetworkPeerType.Disconnected) {
+			networkView.RPC("RemStepForward", RPCMode.Others);
+		} else {
+			RemStepForward();
+		}
+	}
+	[RPC]
+	void RemStepForward() {
+		curState.time += 0.2f;
+	}
+	public void StepBack() {
+		if(Network.peerType != NetworkPeerType.Disconnected) {
+			networkView.RPC("RemStepBack", RPCMode.Others);
+		} else {
+			RemStepBack();
+		}
+	}
+	[RPC]
+	void RemStepBack() {
+		curState.time -= 0.2f;
 	}
 	public float synchronisedTime;
 	public float synchronisedAbsTime;
