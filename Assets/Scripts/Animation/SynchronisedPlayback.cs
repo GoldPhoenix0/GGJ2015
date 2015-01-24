@@ -100,10 +100,13 @@ public class SynchronisedPlayback : MonoBehaviour {
 		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
 			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
 		}
-		if(Network.peerType == NetworkPeerType.Disconnected) {
-			if(Input.GetKeyDown(KeyCode.S)) {
+		if(Input.GetKeyDown(KeyCode.S)) {
+			if(Network.peerType == NetworkPeerType.Disconnected) {
 				ConfirmScreenshotPosition(curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
+			} else {
+				TakeScreenshot();
 			}
 		}
+
 	}
 }
