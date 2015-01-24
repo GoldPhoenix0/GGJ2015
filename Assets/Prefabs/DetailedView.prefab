@@ -11,7 +11,7 @@ GameObject:
   - 222: {fileID: 22226438}
   - 114: {fileID: 11426426}
   - 114: {fileID: 11426428}
-  - 114: {fileID: 11426424}
+  - 114: {fileID: 11412812}
   m_Layer: 5
   m_Name: VideoButton
   m_TagString: Untagged
@@ -226,7 +226,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &11426424
+--- !u!114 &11412812
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -234,12 +234,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 126434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28a752bd005f6045be21678299dbe97, type: 3}
+  m_Script: {fileID: 11500000, guid: 639b16cb3f263c54788ce2beb76b322a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherDialog: {fileID: 0}
-  thisDialog: {fileID: 126442}
-  hideSelf: 1
+  sync: {fileID: 0}
 --- !u!114 &11426426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,8 +298,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11426424}
-        m_MethodName: ToggleDialog
+      - m_Target: {fileID: 11412812}
+        m_MethodName: UpdateVideo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
