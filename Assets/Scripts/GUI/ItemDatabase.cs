@@ -8,13 +8,13 @@ public class ItemDatabase : MonoBehaviour
     public string[] database;
 
     [SerializeField] private InputField inputField = null; // assign in the editor
-    [SerializeField] private Text outputField = null; // assign in the editor
+    [SerializeField] private GameObject buttonPrefab = null; // assign in the editor
+    [SerializeField] private ScrollableList scrollList = null; // assign in the editor
 
     // Use this for initialization
     void Start () 
     {
         inputField = GetComponent<InputField>();
-        //inputField.onEndEdit.AddListener(() => { DisplayResult(); });
     }
     
     public void DisplayResult()
@@ -23,14 +23,8 @@ public class ItemDatabase : MonoBehaviour
 
         List<string> results = SearchResults(database, searchString);
 
-        string display = "";
-
-        foreach(string result in results)
-        {
-            display += result + "\n";
-        }
-
-        outputField.text = display;
+        // Display the results as separate buttons on a list
+        scrollList.PopulateList(results);
     }
 
     private List<string> SearchResults(string[] db, string searchString)
@@ -39,7 +33,6 @@ public class ItemDatabase : MonoBehaviour
         
         foreach(string item in db)
         {
-            //if(item.Contains(searchString))
             // Search the string ignoring case
             if(item.IndexOf(searchString, System.StringComparison.OrdinalIgnoreCase) >= 0)
             {
