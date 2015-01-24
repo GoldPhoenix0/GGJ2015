@@ -1345,10 +1345,10 @@ Canvas:
   m_GameObject: {fileID: 1062001694}
   m_Enabled: 1
   serializedVersion: 2
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1863657731}
   m_PlaneDistance: 100
-  m_PixelPerfect: 1
+  m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -2227,6 +2227,18 @@ Prefab:
     - target: {fileID: 2026318, guid: 68f98500cb2f2434592ff126309c10c0, type: 2}
       propertyPath: m_CullingMask.m_Bits
       value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 22354678, guid: 68f98500cb2f2434592ff126309c10c0, type: 2}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22354678, guid: 68f98500cb2f2434592ff126309c10c0, type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1863657731}
+    - target: {fileID: 22354678, guid: 68f98500cb2f2434592ff126309c10c0, type: 2}
+      propertyPath: m_PixelPerfect
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 11454678, guid: 68f98500cb2f2434592ff126309c10c0, type: 2}
