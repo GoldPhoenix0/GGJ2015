@@ -7,6 +7,10 @@ public class GeneralMetadata {
 	public string title;
 	public string body;
 	public Texture icon;
+    public float startTime;
+    public float endTime;
+    public string animationName;
+    public int cameraIndex;
 }
 
 public class ScreenshotWithMetadata {
