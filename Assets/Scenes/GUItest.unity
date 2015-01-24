@@ -1841,7 +1841,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1045093892
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2443,6 +2443,8 @@ GameObject:
   - 222: {fileID: 1209589851}
   - 114: {fileID: 1209589850}
   - 114: {fileID: 1209589849}
+  - 114: {fileID: 1209589853}
+  - 114: {fileID: 1209589852}
   m_Layer: 5
   m_Name: JoinButton
   m_TagString: Untagged
@@ -2506,7 +2508,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1209589850}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1209589852}
+        m_MethodName: SubmitIPAddress
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine, Version=0.0.0.0,
+            Culture=neutral, PublicKeyToken=null
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1209589850
@@ -2536,6 +2550,30 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1209589847}
+--- !u!114 &1209589852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209589847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 628727c7c46646244a789e3a216a56b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ipInputField: {fileID: 1106533630}
+--- !u!114 &1209589853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209589847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a75e8f4226b341d5b0a1b05da3b60bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSceneName: 
 --- !u!1 &1301944938
 GameObject:
   m_ObjectHideFlags: 0
@@ -3103,7 +3141,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1728327948
 RectTransform:
   m_ObjectHideFlags: 0
