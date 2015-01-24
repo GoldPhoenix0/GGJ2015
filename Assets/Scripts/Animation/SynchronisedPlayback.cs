@@ -30,6 +30,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[SerializeField] string defName;
 	public void Play() {
+        Debug.Log("Play Pressed");
 		networkView.RPC("RemPlay", RPCMode.Others, defName, 0);
 	}
 	/*
@@ -47,6 +48,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 		targetSpeed = 1;
 	}
 	public void Pause() {
+        Debug.Log("Pause Pressed");
 		networkView.RPC("RemPause", RPCMode.Others);
 	}
 	[RPC]
@@ -55,6 +57,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	
 	public void Rewind() {
+        Debug.Log("Rewind Pressed");
 		networkView.RPC("RemRewind", RPCMode.Others);
 	}
 	[RPC]
@@ -63,6 +66,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	
 	public void FastForward() {
+        Debug.Log("Fast Forward Pressed");
 		networkView.RPC("RemFastForward", RPCMode.Others);
 	}
 	[RPC]
