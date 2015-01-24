@@ -28,6 +28,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	void ConfirmScreenshotPosition(float absTime, int camIndex, Quaternion rotationOffset, string name) {
 		// This should take a screenshot (turn it into a texture? Alongside pixel positions of all relevant objects?)
 		camManager.SetCamera(camIndex);
+		animation.Play(name);
 		curState = animation[name];
 		curState.time = absTime;
 		curState.speed = 0;
