@@ -56,7 +56,7 @@ public class DatabaseManager : MonoBehaviour
                 // [0] = Heading
                 // [1] = Body
                 // [2] = Icon (Not IMPLEMENTED)
-                string[] vals = line.Split(',');
+                string[] vals = line.Split('^');
                 
                 entry.title = vals[0];
                 entry.body = vals[1];
