@@ -1,0 +1,9 @@
+# Write in form of Title, Body, (optional) Image Location in resources folder
+# e.g. Optimus Prime,Leader of the Autobots,icon/optimus.png
+# NOTE: Title must be unique, otherwise it will crash the game
+Optimus Prime,Leader of the Autobots,icon/optimus.png
+Bumblebee,Best yellow car around from any version!,icon/bumblebee.png
+Megatron,Leader of the Decepticons,icon/megatron.png
+Starscream,Jerkiest jerk of the lot of them,icon/starscream.png
+Grimrock,Robotic Dinosaurs ftw!,icon/grimrock.png
+Soundwave,Best Sound System... Ever!,icon/soundwave.png
