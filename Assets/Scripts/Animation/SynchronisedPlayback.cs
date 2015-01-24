@@ -9,8 +9,25 @@ public class SynchronisedPlayback : MonoBehaviour {
 	AnimationState curState;
 
 	float targetSpeed;
-
+	int index;
 	[SerializeField] CameraManager camManager;
+
+	public void TakeScreenshot() {
+		// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
+		networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
+	}
+
+	[RPC]
+	void RequestScreenshot(NetworkPlayer player) {
+		// This should find the current position and direction of the camera, and send them back to the other player
+		networkView.RPC("ConfirmScreenshot", player, curState.time, index, camManager.GetCurrentCameraOffset());
+	}
+
+	[RPC]
+	void ConfirmScreenshotPosition(float absTime, int camIndex, Quaternion rotationOffset) {
+		// This should take a screenshot (turn it into a texture? Alongside pixel positions of all relevant objects?)
+
+	}
 
 	public void Play(string name, int cameraIndex) {
 		networkView.RPC("RemPlay", RPCMode.Others, name, cameraIndex);
@@ -20,6 +37,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 		if(!animation.isPlaying) {
 			animation.Play(name);
 		}
+		index = cameraIndex;
 		camManager.SetCamera(cameraIndex);
 		curState = animation[name];
 		targetSpeed = 1;

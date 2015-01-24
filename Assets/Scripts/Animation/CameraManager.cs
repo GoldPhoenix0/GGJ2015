@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class CameraManager : MonoBehaviour {
 	[System.Serializable]
-	class CameraPosition {
+	public class CameraPosition {
 		public Transform trans;
 		public Renderer rend;
 	}
@@ -22,6 +22,8 @@ public class CameraManager : MonoBehaviour {
 	[SerializeField]GameObject eyesPrefab;
 	[SerializeField]GameObject handsPrefab;
 
+	CameraMode curMode;
+
 	public void InitialiseCamera(CameraMode mode) {
 		switch(mode) {
 		case CameraMode.Eyes:
@@ -31,6 +33,14 @@ public class CameraManager : MonoBehaviour {
 			currentCameraHook = (GameObject)Instantiate(handsPrefab);
 			break;
 		}
+		curMode = mode;
+	}
+
+	public Quaternion GetCurrentCameraOffset() {
+		if(curMode == CameraMode.Eyes) {
+			return currentCameraHook.GetComponent<LocalRotationQuery>().GetLocalRotation();
+		}
+		return Quaternion.identity;
 	}
 
 	public void SetCamera(int camNum) {
