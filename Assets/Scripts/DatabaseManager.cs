@@ -149,7 +149,7 @@ public class DatabaseManager : MonoBehaviour
                 {
                     entry.animationName = vals[6];
                 }
-                if(vals[7] == "" || int.TryParse(vals[7], out i))
+                if(vals[7] == "" || !int.TryParse(vals[7], out i))
                 {
                     entry.cameraIndex = -1;
                 }

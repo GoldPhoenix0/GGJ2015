@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class ScreenshotViewer : MonoBehaviour {
 
 	[SerializeField] RawImage image;
+	[SerializeField] GameObject imageObj;
 	[SerializeField] Button dataButtonPrefab;
 
 	ScreenshotWithMetadata data;
@@ -34,7 +35,7 @@ public class ScreenshotViewer : MonoBehaviour {
 			Destroy(butt.gameObject);
 		}
 		curButtons.Clear();
-		image.gameObject.SetActive(true);
+		imageObj.SetActive(true);
 		image.texture = data.screenshot;
 
 		for(int i = 0; i < data.positions.Length; ++i) {
