@@ -3896,6 +3896,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 2138579324}
   - 114: {fileID: 2138579325}
+  - 148: {fileID: 2138579326}
   m_Layer: 0
   m_Name: NetworkCore
   m_TagString: Untagged
@@ -3927,3 +3928,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainSceneNum: 1
+--- !u!148 &2138579326
+NetworkView:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2138579323}
+  m_Enabled: 1
+  m_StateSynchronization: 0
+  m_Observed: {fileID: 2138579325}
+  m_ViewID:
+    m_ID: 1
+    m_Type: 1
