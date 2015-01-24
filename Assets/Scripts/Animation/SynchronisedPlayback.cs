@@ -11,7 +11,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	float targetSpeed;
 	int index;
 	[SerializeField] CameraManager camManager;
-
+	[SerializeField] DetectableObjectRegistry detectionRegistry;
 	public void TakeScreenshot() {
 		// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
 		networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
@@ -31,8 +31,10 @@ public class SynchronisedPlayback : MonoBehaviour {
 		curState.time = absTime;
 		curState.speed = 0;
 		camManager.SetCameraOffset(rotationOffset);
-
 	}
+
+	public ScreenshotWithMetadata lastScreenshot;
+
 	[SerializeField] string defName;
 	public void Play() {
 		if(Network.peerType != NetworkPeerType.Disconnected) {
