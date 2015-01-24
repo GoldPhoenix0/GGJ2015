@@ -10,7 +10,7 @@ public class ScreenshotViewer : MonoBehaviour {
 	[SerializeField] Button dataButtonPrefab;
 
 	ScreenshotWithMetadata data;
-	List<Button> curButtons = new List<Button>();
+	List<Button> CurButts = new List<Button>();
 	List<ButtonDataManager> managers = new List<ButtonDataManager>();
 
 	[SerializeField] PopulateDetailedView detailPop;
@@ -31,10 +31,10 @@ public class ScreenshotViewer : MonoBehaviour {
 	}
 
 	public void SetData(ScreenshotWithMetadata data) {
-		foreach(Button butt in curButtons) {
+		foreach(Button butt in CurButts) {
 			Destroy(butt.gameObject);
 		}
-		curButtons.Clear();
+		CurButts.Clear();
 		imageObj.SetActive(true);
 		image.texture = data.screenshot;
 
@@ -43,7 +43,7 @@ public class ScreenshotViewer : MonoBehaviour {
 				continue;
 			}
 			Button curButt = (Button)Instantiate(dataButtonPrefab);
-			curButtons.Add(curButt);
+			CurButts.Add(curButt);
 			RectTransform curTrans = curButt.GetComponent<RectTransform>();
 			curTrans.SetParent(image.GetComponent<RectTransform>(), false);
 			curTrans.anchoredPosition = Vector2.Scale(data.positions[i], image.GetComponent<RectTransform>().sizeDelta);
@@ -51,6 +51,14 @@ public class ScreenshotViewer : MonoBehaviour {
 			managers.Add(newDat);
 			curButt.onClick.AddListener(newDat.DataPressed);
 		}
+	}
+
+	public void DismissData() {
+		foreach(Button butt in CurButts) {
+			Destroy(butt.gameObject);
+		}
+		CurButts.Clear();
+		imageObj.SetActive(false);
 	}
 
 }
