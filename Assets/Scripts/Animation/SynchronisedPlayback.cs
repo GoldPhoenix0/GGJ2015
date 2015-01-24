@@ -100,7 +100,8 @@ public class SynchronisedPlayback : MonoBehaviour {
 	public float synchronisedAbsTime;
 	[RPC]
 	void UpdateNormalisedTime(float normTime, float absTime) {
-		synchronisedTime = newTime;
+		synchronisedTime = normTime;
+		synchronisedAbsTime = absTime;
 	}
 
 	void Update() {
@@ -115,7 +116,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 			}
 		}
 		if(camManager.GetMode() == CameraManager.CameraMode.Eyes && curState != null) {
-			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, curState.normalizedTime);
+			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, curState.normalizedTime, curState.time);
 		}
 
 	}
