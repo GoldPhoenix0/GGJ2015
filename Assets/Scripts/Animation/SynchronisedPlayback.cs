@@ -13,6 +13,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[SerializeField] CameraManager camManager;
 	[SerializeField] DetectableObjectRegistry detectionRegistry;
 	[SerializeField] ScreenshotViewer viewer;
+	[SerializeField] DatabaseManager dbm;
 	public void TakeScreenshot() {
 		// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
 		networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
@@ -41,6 +42,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 
 	public void SelectFootage(GeneralMetadata data) {
 		currentData = data;
+	}
+
+	[RPC]
+	void LoadFootage(string dataKey) {
+		SelectFootage(dbm.GetMetadata(dataKey));
 	}
 
 	[SerializeField] GeneralMetadata currentData;
