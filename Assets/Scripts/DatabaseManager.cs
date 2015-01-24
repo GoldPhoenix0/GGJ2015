@@ -53,6 +53,8 @@ public class DatabaseManager : MonoBehaviour
             // Ignore comments starting with #
             if(!line[0].Equals('#'))
             {
+                int i = 0;
+                float f = 0;
                 GeneralMetadata entry = new GeneralMetadata();
                 // [0] = Heading
                 // [1] = Body
@@ -62,9 +64,37 @@ public class DatabaseManager : MonoBehaviour
                 entry.title = vals[0];
                 entry.body = vals[1];
                 
-                if(vals.Length > 2)
+                if(vals[2] != "")
                 {
                     entry.icon = (Texture)Resources.Load(vals[2], typeof(Texture));
+                }
+                if(vals[3] == "" || !float.TryParse(vals[3], out f))
+                {
+                    entry.startTime = -1;
+                }
+                else
+                {
+                    entry.startTime = f;
+                }
+                if(vals[4] == "" || !float.TryParse(vals[4], out f))
+                {
+                    entry.endTime = -1;
+                }
+                else
+                {
+                    entry.endTime = f;
+                }
+                if(vals[5] != "")
+                {
+                    entry.animationName = vals[5];
+                }
+                if(vals[6] == "" || int.TryParse(vals[6], out i))
+                {
+                    entry.cameraIndex = -1;
+                }
+                else
+                {
+                    entry.cameraIndex = i;
                 }
                 
                 // add item to the database
