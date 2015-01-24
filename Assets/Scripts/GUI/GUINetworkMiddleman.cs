@@ -5,12 +5,12 @@ using System.Collections;
 public class GUINetworkMiddleman : MonoBehaviour 
 {
     [SerializeField] private InputField ipInputField = null; // assign in the editor
-    private NetworkCore networkCore;
+    [SerializeField] private NetworkCore networkCore;
 
     // Use this for initialization
     void Start () 
     {
-        networkCore = GetComponent<NetworkCore>();
+
     }
     
     public void SubmitIPAddress()
