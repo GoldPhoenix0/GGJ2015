@@ -11,7 +11,7 @@ public class GeneralMetadata {
 
 public class ScreenshotWithMetadata {
 	public Texture screenshot;
-	public Vector2[] positions;
+	public Vector3[] positions;
 	public string[] data;
 
 	public ScreenshotWithMetadata(Camera takeFrom, DetectableObjectRegistry reg) {

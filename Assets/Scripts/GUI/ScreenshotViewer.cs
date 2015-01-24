@@ -21,7 +21,7 @@ public class ScreenshotViewer : MonoBehaviour {
 		image.texture = data.screenshot;
 
 		for(int i = 0; i < data.positions.Length; ++i) {
-			if(data.positions[i].x > 1 || data.positions[i].y > 1) {
+			if(data.positions[i].x > 1 || data.positions[i].y > 1 || data.positions[i].z < 0) {
 				continue;
 			}
 			Button curButt = (Button)Instantiate(dataButtonPrefab);
