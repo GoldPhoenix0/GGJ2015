@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7685531c16f4d15b8016812af4561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metadataKey: 
+  metadataKey: Circle
   myRender: {fileID: 0}
 --- !u!23 &58766235
 Renderer:
@@ -892,7 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7685531c16f4d15b8016812af4561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metadataKey: 
+  metadataKey: Nils
   myRender: {fileID: 0}
 --- !u!23 &392147893
 Renderer:
@@ -1003,7 +1003,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &463599783
 Transform:
   m_ObjectHideFlags: 0
@@ -1631,6 +1631,10 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1573249885}
+    - target: {fileID: 190554, guid: bbc81571fe278481e942467d16238208, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bbc81571fe278481e942467d16238208, type: 2}
   m_RootGameObject: {fileID: 463599782}
@@ -1799,7 +1803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7685531c16f4d15b8016812af4561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metadataKey: 
+  metadataKey: Plate
   myRender: {fileID: 0}
 --- !u!23 &1065154228
 Renderer:
@@ -2007,7 +2011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7685531c16f4d15b8016812af4561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metadataKey: 
+  metadataKey: Bear
   myRender: {fileID: 0}
 --- !u!23 &1133405019
 Renderer:
@@ -2065,7 +2069,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7685531c16f4d15b8016812af4561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metadataKey: 
+  metadataKey: Shark
   myRender: {fileID: 0}
 --- !u!23 &1195574902
 Renderer:
@@ -3152,7 +3156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7685531c16f4d15b8016812af4561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metadataKey: 
+  metadataKey: Chupacabra
   myRender: {fileID: 0}
 --- !u!23 &1746396698
 Renderer:
@@ -3222,7 +3226,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bd7685531c16f4d15b8016812af4561e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  metadataKey: 
+  metadataKey: Fish
   myRender: {fileID: 0}
 --- !u!23 &1754044442
 Renderer:
