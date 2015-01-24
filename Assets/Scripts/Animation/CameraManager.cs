@@ -32,7 +32,9 @@ public class CameraManager : MonoBehaviour {
 			break;
 		case CameraMode.Hands:
 			currentCameraHook = (GameObject)Instantiate(handsPrefab);
-			currentCameraHook.SendMessage("SetSynchronisedPlayback", playback);
+			if(playback != null) {
+				currentCameraHook.SendMessage("SetSynchronisedPlayback", playback);
+			}
 			break;
 		}
 		curMode = mode;

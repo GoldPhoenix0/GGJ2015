@@ -1,11 +1,19 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class HandsUIEnabler : MonoBehaviour {
 
-	SynchronisedPlayback playback;
+	[SerializeField] Button play;
+	[SerializeField] Button pause;
+	[SerializeField] Button rewind;
+	[SerializeField] Button ffword;
 
 	void SetSynchronisedPlayback (SynchronisedPlayback playback) {
-		this.playback = playback;
+		play.onClick.AddListener(playback.Play);
+		pause.onClick.AddListener(playback.Pause);
+		rewind.onClick.AddListener(playback.Rewind);
+		ffword.onClick.AddListener(playback.FastForward);
+
 	}
 }

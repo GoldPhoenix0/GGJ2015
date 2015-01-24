@@ -28,10 +28,14 @@ public class SynchronisedPlayback : MonoBehaviour {
 		// This should take a screenshot (turn it into a texture? Alongside pixel positions of all relevant objects?)
 
 	}
-
+	[SerializeField] string defName;
+	public void Play() {
+		networkView.RPC("RemPlay", RPCMode.Others, defName, 0);
+	}
+	/*
 	public void Play(string name, int cameraIndex) {
 		networkView.RPC("RemPlay", RPCMode.Others, name, cameraIndex);
-	}
+	}*/
 	[RPC]
 	void RemPlay(string name, int cameraIndex) {
 		if(!animation.isPlaying) {
