@@ -21,7 +21,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[RPC]
 	void RequestScreenshot(NetworkPlayer player) {
 		// This should find the current position and direction of the camera, and send them back to the other player
-		networkView.RPC("ConfirmScreenshot", player, curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
+		networkView.RPC("ConfirmScreenshotPosition", player, curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
 	}
 
 	[RPC]
