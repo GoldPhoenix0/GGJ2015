@@ -96,6 +96,12 @@ public class SynchronisedPlayback : MonoBehaviour {
 	void RemFastForward() {
 		targetSpeed = 5;
 	}
+	public float synchronisedTime;
+	public float synchronisedAbsTime;
+	[RPC]
+	void UpdateNormalisedTime(float normTime, float absTime) {
+		synchronisedTime = newTime;
+	}
 
 	void Update() {
 		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
@@ -107,6 +113,9 @@ public class SynchronisedPlayback : MonoBehaviour {
 			} else {
 				TakeScreenshot();
 			}
+		}
+		if(camManager.GetMode() == CameraManager.CameraMode.Eyes && curState != null) {
+			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, curState.normalizedTime);
 		}
 
 	}

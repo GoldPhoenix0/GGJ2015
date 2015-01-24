@@ -17,7 +17,7 @@ public class ScreenshotWithMetadata {
 	public ScreenshotWithMetadata(Camera takeFrom, DetectableObjectRegistry reg) {
 		screenshot = takeFrom.targetTexture;
 		List<DetectableObject> objectsHere = reg.GetCurrentlyInView(takeFrom.transform);
-		positions = new Vector2[objectsHere.Count];
+		positions = new Vector3[objectsHere.Count];
 		data = new string[objectsHere.Count];
 		for(int i = 0; i < objectsHere.Count; ++i) {
 			positions[i] = takeFrom.WorldToViewportPoint(objectsHere[i].transform.position);
