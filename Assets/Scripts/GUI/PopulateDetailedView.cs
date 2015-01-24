@@ -4,6 +4,7 @@ using System.Collections;
 
 public class PopulateDetailedView : MonoBehaviour 
 {
+    public GameObject videoButton;
     [SerializeField]private DatabaseManager dbManager;
     [SerializeField]private RectTransform contentView;
     [SerializeField]private Text title;
@@ -20,6 +21,16 @@ public class PopulateDetailedView : MonoBehaviour
         if(item.icon != null)
         {
             icon.texture = item.icon;
+        }
+
+        if(item.startTime >= 0 && item.endTime >= 0 &&
+           item.animationName != "" && item.cameraIndex >= 0)
+        {
+            videoButton.SetActive(true);
+        }
+        else
+        {
+            videoButton.SetActive(false);
         }
       
         //adjust the height of the container so that it will just barely fit all its children
