@@ -5,16 +5,18 @@ public class NetworkCore : MonoBehaviour {
 
 	static int PORTNUM = 25038;
 
-	public void StartServer() {
+	[SerializeField]string mainSceneName;
 
+	public void StartServer() {
+		Network.InitializeServer(10, PORTNUM, !Network.HavePublicAddress());
 	}
 
 	public void JoinServer(string ip) {
-
+		Network.Connect(ip, PORTNUM);
 	}
 
 	public void StartGame() {
-
+		Application.LoadLevel(mainSceneName);
 	}
 
 	public bool IsConnected() {

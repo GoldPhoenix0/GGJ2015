@@ -10,14 +10,17 @@ public class SynchronisedPlayback : MonoBehaviour {
 
 	float targetSpeed;
 
-	public void Play(string name) {
-		networkView.RPC("RemPlay", RPCMode.Others, name);
+	[SerializeField] CameraManager camManager;
+
+	public void Play(string name, int cameraIndex) {
+		networkView.RPC("RemPlay", RPCMode.Others, name, cameraIndex);
 	}
 	[RPC]
-	void RemPlay(string name) {
+	void RemPlay(string name, int cameraIndex) {
 		if(!animation.isPlaying) {
 			animation.Play(name);
 		}
+		camManager.SetCamera(cameraIndex);
 		curState = animation[name];
 		targetSpeed = 1;
 	}
