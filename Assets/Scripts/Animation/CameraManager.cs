@@ -67,4 +67,8 @@ public class CameraManager : MonoBehaviour {
 		currentCameraHook.transform.localPosition = Vector3.zero;
 		currentCameraHook.transform.localRotation = Quaternion.identity;
 	}
+	[SerializeField] Camera screenieCam;
+	public Camera GetScreenshotCamera() {
+		return screenieCam;
+	}
 }

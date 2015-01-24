@@ -9,6 +9,7 @@ public class ScrollableList : MonoBehaviour
 {
     public GameObject itemPrefab;
     public int itemCount = 10, columnCount = 1;
+    [SerializeField]private PopulateDetailedView detailedView;
     private RectTransform rowRectTransform, containerRectTransform;
 
     void Start()
@@ -61,6 +62,10 @@ public class ScrollableList : MonoBehaviour
             //newItem.GetComponent<Button>().guiText.text = results[i];
 
             newItem.GetComponentInChildren<Text>().text = results[i];
+
+            // Adds the listener and sets the detailed view in the button
+            newItem.AddComponent<DynamicButtonOnClickListener>()
+                .SetDetailedView(detailedView);
 
             //move and size the new item
             RectTransform rectTransform = newItem.GetComponent<RectTransform>();

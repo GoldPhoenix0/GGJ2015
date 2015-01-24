@@ -4,7 +4,7 @@ using System.Collections;
 
 public class DetectableObjectRegistry : MonoBehaviour {
 
-	List<DetectableObject> detectables;
+	List<DetectableObject> detectables = new List<DetectableObject>();
 
 	public void RegisterDetectable(DetectableObject obj) {
 		detectables.Add(obj);

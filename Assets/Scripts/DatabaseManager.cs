@@ -9,7 +9,7 @@ public class DatabaseManager : MonoBehaviour
     private Dictionary<string, GeneralMetadata> database;
 
     // Use this for initialization
-    void Start () 
+    void Awake () 
     {
         database = new Dictionary<string, GeneralMetadata>();
 

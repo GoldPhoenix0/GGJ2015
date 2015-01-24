@@ -6,12 +6,14 @@ public class ChangeGUIState : MonoBehaviour
 {
     public GameObject otherDialog; // assign in the editor
     public GameObject thisDialog;
+    public bool hideSelf = false;
     private bool isSetup = false;
 
     // Use this for initialization
     void Start () 
     {
-        if(otherDialog != null && thisDialog != null)
+        // Allows just itself to be hidden to be hidden
+        if((otherDialog != null || hideSelf) && thisDialog != null)
         {
             isSetup = true;
         }
@@ -22,7 +24,11 @@ public class ChangeGUIState : MonoBehaviour
         if(isSetup)
         {
             thisDialog.SetActive(false);
-            otherDialog.SetActive(true);
+
+            if(!hideSelf)
+            {
+                otherDialog.SetActive(true);
+            }
         }
     }
 }
