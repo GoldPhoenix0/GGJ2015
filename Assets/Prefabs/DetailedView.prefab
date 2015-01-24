@@ -98,6 +98,7 @@ GameObject:
   - 222: {fileID: 22226446}
   - 114: {fileID: 11426442}
   - 114: {fileID: 11426440}
+  - 114: {fileID: 11421712}
   m_Layer: 5
   m_Name: BodyText
   m_TagString: Untagged
@@ -115,6 +116,7 @@ GameObject:
   - 224: {fileID: 22426446}
   - 222: {fileID: 22226448}
   - 114: {fileID: 11426444}
+  - 114: {fileID: 11421714}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -166,6 +168,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 22426452}
+  - 114: {fileID: 11421718}
+  - 114: {fileID: 11421716}
   m_Layer: 0
   m_Name: Content
   m_TagString: Untagged
@@ -238,6 +242,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sync: {fileID: 0}
+--- !u!114 &11421712
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 280
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+--- !u!114 &11421714
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1679637790, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: 100
+  m_MinHeight: 100
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+--- !u!114 &11421716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
+--- !u!114 &11421718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 126452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1297475563, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 1
+  m_Spacing: 5
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 1
 --- !u!114 &11426426
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -397,8 +470,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 11426454}
   m_HandleRect: {fileID: 22426454}
   m_Direction: 2
-  m_Value: .99999994
-  m_Size: .181299999
+  m_Value: 0
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -495,7 +568,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 533bffe5585644d46881c09a71bb7b2f, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -893,10 +966,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22426452}
   m_RootOrder: 1
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 890.099976}
-  m_SizeDelta: {x: 288, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: 1}
 --- !u!224 &22426446
 RectTransform:
@@ -910,10 +983,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 22426452}
   m_RootOrder: 0
-  m_AnchorMin: {x: .5, y: .5}
-  m_AnchorMax: {x: .5, y: .5}
-  m_AnchoredPosition: {x: 0, y: 945.099976}
-  m_SizeDelta: {x: 110.800003, y: 110.800003}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: .5, y: .5}
 --- !u!224 &22426448
 RectTransform:
@@ -967,7 +1040,7 @@ RectTransform:
   m_AnchorMin: {x: .5, y: .5}
   m_AnchorMax: {x: .5, y: .5}
   m_AnchoredPosition: {x: 0, y: 181.299988}
-  m_SizeDelta: {x: 288, y: 2000}
+  m_SizeDelta: {x: 288, y: 0}
   m_Pivot: {x: .49999994, y: .99999994}
 --- !u!224 &22426454
 RectTransform:
