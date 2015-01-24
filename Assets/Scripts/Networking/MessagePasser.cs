@@ -23,17 +23,19 @@ public class MessagePasser : MonoBehaviour {
 	}
 
 	public void SendSavedText() {
+		//RemoteMessage(curMessage);
 		networkView.RPC("RemoteMessage", RPCMode.Others, curMessage);
 	}
 
 	public void SendText(string sent) {
+		//RemoteMessage(sent);
 		networkView.RPC("RemoteMessage", RPCMode.Others, sent);
 	}
 
 	[RPC]
 	void RemoteMessage(string newMessage) {
 		// Here we should pop up a signal to eyes
-		messageText.text = curMessage;
+		messageText.text = newMessage;
 		curTime = 0;
 	}
 
