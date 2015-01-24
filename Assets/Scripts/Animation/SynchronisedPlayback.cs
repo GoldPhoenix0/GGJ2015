@@ -115,6 +115,9 @@ public class SynchronisedPlayback : MonoBehaviour {
 				TakeScreenshot();
 			}
 		}
+		if(Network.peerType == NetworkPeerType.Disconnected && curState != null) {
+			UpdateNormalisedTime(curState.normalizedTime, curState.time);
+		}
 		if(camManager.GetMode() == CameraManager.CameraMode.Eyes && curState != null) {
 			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, curState.normalizedTime, curState.time);
 		}
