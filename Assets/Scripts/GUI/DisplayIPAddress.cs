@@ -5,6 +5,7 @@ using System.Collections;
 public class DisplayIPAddress : MonoBehaviour
 {
     [SerializeField] private Text displayText = null; // assign in the editor
+    public bool showJoined = false;
 
     // Use this for initialization
     void Start () 
@@ -24,6 +25,18 @@ public class DisplayIPAddress : MonoBehaviour
         {
             ipInfo = ipInfo.Substring(0, lastComma);
         }
+        
+        displayText.text = ipInfo;
+    }
+
+    void Update()
+    {
+        if(!showJoined)
+        {
+            return;
+        }
+        
+        string ipInfo = (Network.connections.Length + 1) + " Players Joined";
         
         displayText.text = ipInfo;
     }
