@@ -16,6 +16,6 @@ public class StartNetworkGame : MonoBehaviour
     // Update is called once per frame
     void Update () 
     {
-        startButton.interactable = (networkCore.GetConnections() > 1);
+        startButton.interactable = (networkCore.GetConnections() > 0);
     }
 }
