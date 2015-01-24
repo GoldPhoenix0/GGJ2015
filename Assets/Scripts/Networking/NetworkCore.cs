@@ -5,7 +5,7 @@ public class NetworkCore : MonoBehaviour {
 
 	static int PORTNUM = 25038;
 
-	[SerializeField]string mainSceneName;
+	[SerializeField]int mainSceneNum;
 
 	public void StartServer() {
 		Network.InitializeServer(10, PORTNUM, !Network.HavePublicAddress());
@@ -16,7 +16,12 @@ public class NetworkCore : MonoBehaviour {
 	}
 
 	public void StartGame() {
-		Application.LoadLevel(mainSceneName);
+		networkView.RPC("LoadLevel", RPCMode.All, mainSceneNum);
+	}
+
+	[RPC]
+	void LoadLevel(int level) {
+		Application.LoadLevel(level);
 	}
 
 	public bool IsConnected() {
