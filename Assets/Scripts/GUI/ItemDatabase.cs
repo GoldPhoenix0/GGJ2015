@@ -8,13 +8,14 @@ public class ItemDatabase : MonoBehaviour
     public string[] database;
 
     [SerializeField] private InputField inputField = null; // assign in the editor
-    [SerializeField] private GameObject buttonPrefab = null; // assign in the editor
     [SerializeField] private ScrollableList scrollList = null; // assign in the editor
+    [SerializeField] private DatabaseManager dbManager = null; // assign in the editor
 
     // Use this for initialization
     void Start () 
     {
         inputField = GetComponent<InputField>();
+        database = dbManager.GetTitles().ToArray();
     }
     
     public void DisplayResult()
