@@ -16,27 +16,23 @@ public class CameraManager : MonoBehaviour {
 	[SerializeField]
 	List<CameraPosition> camTransforms = new List<CameraPosition>();
 
-	[SerializeField] SynchronisedPlayback playback;
-
 	GameObject currentCameraHook;
 	
-	[SerializeField]GameObject eyesPrefab;
-	[SerializeField]GameObject handsPrefab;
+	[SerializeField]GameObject eyesObject;
+	[SerializeField]GameObject handsObject;
 
 	CameraMode curMode;
 
 	public void InitialiseCamera(CameraMode mode) {
 		switch(mode) {
 		case CameraMode.Eyes:
-			currentCameraHook = (GameObject)Instantiate(eyesPrefab);
+			currentCameraHook = eyesObject;
 			break;
 		case CameraMode.Hands:
-			currentCameraHook = (GameObject)Instantiate(handsPrefab);
-			if(playback != null) {
-				currentCameraHook.SendMessage("SetSynchronisedPlayback", playback);
-			}
+			currentCameraHook = handsObject;
 			break;
 		}
+		currentCameraHook.SetActive(true);
 		curMode = mode;
 	}
 
