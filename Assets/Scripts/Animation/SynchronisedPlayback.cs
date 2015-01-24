@@ -20,18 +20,26 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[RPC]
 	void RequestScreenshot(NetworkPlayer player) {
 		// This should find the current position and direction of the camera, and send them back to the other player
-		networkView.RPC("ConfirmScreenshot", player, curState.time, index, camManager.GetCurrentCameraOffset());
+		networkView.RPC("ConfirmScreenshot", player, curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
 	}
 
 	[RPC]
-	void ConfirmScreenshotPosition(float absTime, int camIndex, Quaternion rotationOffset) {
+	void ConfirmScreenshotPosition(float absTime, int camIndex, Quaternion rotationOffset, string name) {
 		// This should take a screenshot (turn it into a texture? Alongside pixel positions of all relevant objects?)
+		camManager.SetCamera(camIndex);
+		curState = animation[name];
+		curState.time = absTime;
+		curState.speed = 0;
+		camManager.SetCameraOffset(rotationOffset);
 
 	}
 	[SerializeField] string defName;
 	public void Play() {
-        Debug.Log("Play Pressed");
-		networkView.RPC("RemPlay", RPCMode.Others, defName, 0);
+		if(Network.peerType != NetworkPeerType.Disconnected) {
+			networkView.RPC("RemPlay", RPCMode.Others, defName, 0);
+		} else {
+			RemPlay(defName, 0);
+		}
 	}
 	/*
 	public void Play(string name, int cameraIndex) {
@@ -48,8 +56,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 		targetSpeed = 1;
 	}
 	public void Pause() {
-        Debug.Log("Pause Pressed");
-		networkView.RPC("RemPause", RPCMode.Others);
+		if(Network.peerType != NetworkPeerType.Disconnected) {
+			networkView.RPC("RemPause", RPCMode.Others);
+		} else {
+			RemPause();
+		}
 	}
 	[RPC]
 	void RemPause() {
@@ -57,8 +68,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	
 	public void Rewind() {
-        Debug.Log("Rewind Pressed");
-		networkView.RPC("RemRewind", RPCMode.Others);
+		if(Network.peerType != NetworkPeerType.Disconnected) {
+			networkView.RPC("RemRewind", RPCMode.Others);
+		} else {
+			RemRewind();
+		}
 	}
 	[RPC]
 	void RemRewind() {
@@ -66,8 +80,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	
 	public void FastForward() {
-        Debug.Log("Fast Forward Pressed");
-		networkView.RPC("RemFastForward", RPCMode.Others);
+		if(Network.peerType != NetworkPeerType.Disconnected) {
+			networkView.RPC("RemFastForward", RPCMode.Others);
+		} else {
+			RemFastForward();
+		}
 	}
 	[RPC]
 	void RemFastForward() {
@@ -75,8 +92,13 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 
 	void Update() {
-		if(curState != null) {
+		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
 			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
+		}
+		if(Network.peerType == NetworkPeerType.Disconnected) {
+			if(Input.GetKeyDown(KeyCode.S)) {
+				ConfirmScreenshotPosition(curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
+			}
 		}
 	}
 }

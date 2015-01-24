@@ -8,7 +8,7 @@ public class NetworkCore : MonoBehaviour {
 	[SerializeField]int mainSceneNum;
 
 	public void StartServer() {
-		Network.InitializeServer(10, PORTNUM, !Network.HavePublicAddress());
+		Network.InitializeServer(10, PORTNUM, false);
 	}
 
 	public void JoinServer(string ip) {

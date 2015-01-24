@@ -8,16 +8,14 @@ public class DisplayIPAddress : MonoBehaviour
     public bool showJoined = false;
 
     // Use this for initialization
-    void Start () 
+    IEnumerator Start () 
     {
+		yield return new WaitForSeconds(0.5f);
         displayText = GetComponent<Text>();
 
         string ipInfo = "Your IP Address is \n";
-        
-        foreach(System.Net.IPAddress ip in System.Net.Dns.Resolve(System.Net.Dns.GetHostName()).AddressList)
-        {
-            ipInfo += ip.ToString() + ", ";
-        }
+
+		ipInfo += Network.player.ipAddress;
         
         int lastComma = ipInfo.LastIndexOf(',');
         
@@ -25,7 +23,8 @@ public class DisplayIPAddress : MonoBehaviour
         {
             ipInfo = ipInfo.Substring(0, lastComma);
         }
-        
+		Debug.Log(Network.peerType);
+		Debug.Log(ipInfo);
         displayText.text = ipInfo;
     }
 

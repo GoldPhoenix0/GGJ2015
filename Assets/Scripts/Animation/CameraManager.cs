@@ -43,6 +43,16 @@ public class CameraManager : MonoBehaviour {
 		return Quaternion.identity;
 	}
 
+	public void SetCameraOffset(Quaternion setTo) {
+		if(curMode == CameraMode.Hands) {
+			handsObject.transform.localRotation = setTo;
+		}
+	}
+
+	public CameraMode GetMode() {
+		return curMode;
+	}
+
 	public void SetCamera(int camNum) {
 		camNum = Mathf.Clamp(camNum, 0, camTransforms.Count);
 		foreach(CameraPosition cam in camTransforms) {
