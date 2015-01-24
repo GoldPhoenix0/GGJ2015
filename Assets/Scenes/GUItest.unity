@@ -2762,6 +2762,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1398013110}
     m_Modifications:
+    - target: {fileID: 11426428, guid: 30a9d2ef0ae4c401f8457549699b2ebf, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 22426442, guid: 30a9d2ef0ae4c401f8457549699b2ebf, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2838,7 +2842,20 @@ Prefab:
       propertyPath: dbManager
       value: 
       objectReference: {fileID: 127764433}
-    m_RemovedComponents: []
+    - target: {fileID: 11426428, guid: 30a9d2ef0ae4c401f8457549699b2ebf, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 991265162}
+    - target: {fileID: 11426428, guid: 30a9d2ef0ae4c401f8457549699b2ebf, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: UpdateVideo
+      objectReference: {fileID: 0}
+    - target: {fileID: 11426428, guid: 30a9d2ef0ae4c401f8457549699b2ebf, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11426424, guid: 30a9d2ef0ae4c401f8457549699b2ebf, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 30a9d2ef0ae4c401f8457549699b2ebf, type: 2}
   m_RootGameObject: {fileID: 1162398305}
   m_IsPrefabParent: 0
@@ -3398,18 +3415,15 @@ RectTransform:
 --- !u!114 &991265162
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11426424, guid: 30a9d2ef0ae4c401f8457549699b2ebf,
-    type: 2}
-  m_PrefabInternal: {fileID: 782176847}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 991265160}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f28a752bd005f6045be21678299dbe97, type: 3}
+  m_Script: {fileID: 11500000, guid: 639b16cb3f263c54788ce2beb76b322a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  otherDialog: {fileID: 0}
-  thisDialog: {fileID: 1162398305}
-  hideSelf: 1
+  sync: {fileID: 0}
 --- !u!114 &991265163
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3451,7 +3465,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 991265162}
-        m_MethodName: ToggleDialog
+        m_MethodName: UpdateVideo
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
