@@ -39,7 +39,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbb7f4f4769c4324eaf78e91a31b16cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csvFile: {fileID: 4900000, guid: 8a0df608526eef249b03668845eaad97, type: 3}
+  csvFile: {fileID: 4900000, guid: f45c3215a296c0c4293526abe10a3687, type: 3}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

@@ -41,8 +41,39 @@ public class DatabaseManager : MonoBehaviour
     {
         return database[key].icon;
     }
-    
+
     private void ReadFile(TextAsset csv)
+    {
+        string[] words = csv.text.Split('|');
+
+        foreach(string line in words)
+        {
+            Debug.Log (line);
+
+            // Ignore comments starting with #
+            if(!line[0].Equals('#'))
+            {
+                GeneralMetadata entry = new GeneralMetadata();
+                // [0] = Heading
+                // [1] = Body
+                // [2] = Icon (Not IMPLEMENTED)
+                string[] vals = line.Split('^');
+
+                entry.title = vals[0];
+                entry.body = vals[1];
+                
+                if(vals.Length > 2)
+                {
+                    entry.icon = (Texture)Resources.Load(vals[2], typeof(Texture));
+                }
+                
+                // add item to the database
+                database.Add(entry.title, entry);
+            }
+        }
+    }
+    
+    /*private void ReadFile(TextAsset csv)
     {
         string line = "";
         StringReader reader = new StringReader(csv.text);
@@ -61,10 +92,10 @@ public class DatabaseManager : MonoBehaviour
                 entry.title = vals[0];
                 entry.body = vals[1];
 
-                /*if(vals.Length > 2)
-                {
+                //if(vals.Length > 2)
+                //{
                     //entry.icon = Resources.Load(vals[2], typeof(Texture));
-                }*/
+                //}
                 
                 // add item to the database
                 database.Add(entry.title, entry);
@@ -73,7 +104,7 @@ public class DatabaseManager : MonoBehaviour
 
         // close the reader after use
         reader.Close();
-    }
+    }*/
 
 
 }
