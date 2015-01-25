@@ -99,7 +99,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemPause() {
-		targetSpeed = 0;
+		AnimatorTimeline.Pause();
 
 	}
 	
