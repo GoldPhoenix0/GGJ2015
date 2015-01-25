@@ -122,7 +122,7 @@ public class DatabaseManager : MonoBehaviour
                 if(vals[3] != "")
                 {
                     //split keywords into comma separated items
-                    entry.keywords = line.Split(',');
+                    entry.keywords = vals[3].Split(',');
                 }
                 else
                 {
