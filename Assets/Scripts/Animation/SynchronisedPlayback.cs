@@ -45,6 +45,13 @@ public class SynchronisedPlayback : MonoBehaviour {
 	public void SelectFootage(GeneralMetadata data) {
 		currentData = data;
 		nameText.text = data.title;
+		animation.Play(currentData.animationName);
+		curState = animation[currentData.animationName];
+		curState.speed = 0;
+		curState.time = currentData.startTime;
+		index = currentData.cameraIndex;
+		camManager.SetCamera(currentData.cameraIndex);
+		viewer.DismissData();
 		if(camManager.GetMode() == CameraManager.CameraMode.Hands) {
 			networkView.RPC("LoadFootage", RPCMode.Others, data.title);
 			messages.SendText("Now Viewing:\n" + data.title);
