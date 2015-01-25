@@ -16,6 +16,16 @@ public class ItemDatabase : MonoBehaviour
     {
         inputField = GetComponent<InputField>();
         database = dbManager.GetTitles().ToArray();
+        //inputField.OnSubmit.AddListener(() => { DisplayResult(); });
+    }
+
+    void Update()
+    {
+        /*if(inputField.isFocused && Input.GetKey(KeyCode.Return)) 
+        {
+            Debug.Log ("enterPressed");
+            DisplayResult();
+        }*/
     }
     
     public void DisplayResult()
