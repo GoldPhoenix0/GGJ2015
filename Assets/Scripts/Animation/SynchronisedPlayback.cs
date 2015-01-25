@@ -15,6 +15,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[SerializeField] ScreenshotViewer viewer;
 	[SerializeField] DatabaseManager dbm;
 	[SerializeField] UnityEngine.UI.Text nameText;
+	[SerializeField] MessagePasser messages;
 	public void TakeScreenshot() {
 		// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
 		networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
@@ -44,6 +45,10 @@ public class SynchronisedPlayback : MonoBehaviour {
 	public void SelectFootage(GeneralMetadata data) {
 		currentData = data;
 		nameText.text = data.title;
+		if(camManager.GetMode() == CameraManager.CameraMode.Hands) {
+			networkView.RPC("LoadFootage", RPCMode.Others, data.title);
+			messages.SendText("Now Viewing:\n" + data.title);
+		}
 	}
 
 	[RPC]
