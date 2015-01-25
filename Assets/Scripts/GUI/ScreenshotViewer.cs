@@ -75,7 +75,7 @@ public class ScreenshotViewer : MonoBehaviour {
 
 			RectTransform trans = imageObj.GetComponent<RectTransform>();
 			Vector2 curDelta = trans.sizeDelta;
-			curDelta.y = Mathf.Lerp (curDelta.y, targetScale, Time.deltaTime);
+			curDelta.y = Mathf.Lerp (curDelta.y, targetScale, Time.deltaTime * 2);
 			trans.sizeDelta = curDelta;
 			if(Mathf.Abs(targetScale - curDelta.y) < 20f) {
 				foreach(Button butt in CurButts) {

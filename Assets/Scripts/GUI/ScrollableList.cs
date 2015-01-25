@@ -57,7 +57,7 @@ public class ScrollableList : MonoBehaviour
             //create a new item, name it, and set the parent
             GameObject newItem = Instantiate(itemPrefab) as GameObject;
             newItem.name = results[i] + "Button";
-            newItem.transform.SetParent(gameObject.transform);
+            newItem.transform.SetParent(gameObject.transform, false);
 
             // Set the title of the button as the result
             //newItem.GetComponent<Button>().guiText.text = results[i];

@@ -17,8 +17,13 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[SerializeField] UnityEngine.UI.Text nameText;
 	[SerializeField] MessagePasser messages;
 	public void TakeScreenshot() {
-		// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
-		networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
+		if(Network.peerType == NetworkPeerType.Disconnected) {
+			ConfirmScreenshotPosition(curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
+		} else {
+			// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
+			networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
+		}
+
 	}
 
 	[RPC]
@@ -154,13 +159,14 @@ public class SynchronisedPlayback : MonoBehaviour {
 		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
 			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
 		}
+		/*
 		if(Input.GetKeyDown(KeyCode.S)) {
 			if(Network.peerType == NetworkPeerType.Disconnected) {
 				ConfirmScreenshotPosition(curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
 			} else {
 				TakeScreenshot();
 			}
-		}
+		}*/
 		if(Network.peerType == NetworkPeerType.Disconnected && curState != null) {
 			UpdateNormalisedTime(curState.normalizedTime, curState.time);
 		}
