@@ -37,11 +37,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 		// This should take a screenshot (turn it into a texture? Alongside pixel positions of all relevant objects?)
 		camManager.SetCamera(camIndex);
 		// Change it to use the other thing!
-		AnimatorTimeline.Play(name);
-		//animation.Play(name);
-		//curState = animation[name];
-		//curState.time = absTime;
-		//curState.speed = 0;
+		AnimatorTimeline.PlayFromTime(name, absTime);
 		AnimatorTimeline.Pause();
 		camManager.SetCameraOffset(rotationOffset);
 		lastScreenshot = new ScreenshotWithMetadata(camManager.GetScreenshotCamera(), detectionRegistry);
@@ -112,7 +108,8 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemRewind() {
-		targetSpeed = -5;
+		AnimatorTimeline.Play(currentData.animationName);
+		AnimatorTimeline.Pause();
 	}
 	
 	public void FastForward() {
@@ -136,7 +133,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemStepForward() {
-
+		bool paused = AnimatorTimeline.isPaused;
+		AnimatorTimeline.PlayFromTime(AnimatorTimeline.nowPlayingTake, AnimatorTimeline.runningTime + 0.2f);
+		if(paused) {
+			AnimatorTimeline.Pause();
+		}
 		//curState.time += 0.2f;
 	}
 	public void StepBack() {
@@ -148,6 +149,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemStepBack() {
+		bool paused = AnimatorTimeline.isPaused;
+		AnimatorTimeline.PlayFromTime(AnimatorTimeline.nowPlayingTake, AnimatorTimeline.runningTime - 0.2f);
+		if(paused) {
+			AnimatorTimeline.Pause();
+		}
 		//curState.time -= 0.2f;
 	}
 	public float synchronisedTime;
