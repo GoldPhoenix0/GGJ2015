@@ -1,0 +1,144 @@
+fileFormatVersion: 2
+guid: e8b1a4406d8f7f247b7f7731441716ad
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: chest
+    100002: ClunkyRobot
+    100004: head
+    100006: head_tip
+    100008: l_clamp_bottom
+    100010: l_clamp_top
+    100012: l_elbow
+    100014: l_shoulder
+    100016: l_wrist
+    100018: pCube82
+    100020: pCube83
+    100022: pCube84
+    100024: pCube85
+    100026: pCube86
+    100028: pCube87
+    100030: pCylinder13
+    100032: polySurface20
+    100034: polySurface21
+    100036: polySurface22
+    100038: pSphere7
+    100040: r_clamp_bottom
+    100042: r_clamp_top
+    100044: r_elbow
+    100046: r_shoulder
+    100048: r_wrist
+    100050: root
+    100052: spine_1
+    100054: spine_2
+    100056: //RootNode
+    100058: transform35
+    100060: transform36
+    100062: transform37
+    100064: transform41
+    100066: transform42
+    100068: transform43
+    100070: transform44
+    100072: transform45
+    100074: transform46
+    100076: transform47
+    400000: chest
+    400002: ClunkyRobot
+    400004: head
+    400006: head_tip
+    400008: l_clamp_bottom
+    400010: l_clamp_top
+    400012: l_elbow
+    400014: l_shoulder
+    400016: l_wrist
+    400018: pCube82
+    400020: pCube83
+    400022: pCube84
+    400024: pCube85
+    400026: pCube86
+    400028: pCube87
+    400030: pCylinder13
+    400032: polySurface20
+    400034: polySurface21
+    400036: polySurface22
+    400038: pSphere7
+    400040: r_clamp_bottom
+    400042: r_clamp_top
+    400044: r_elbow
+    400046: r_shoulder
+    400048: r_wrist
+    400050: root
+    400052: spine_1
+    400054: spine_2
+    400056: //RootNode
+    400058: transform35
+    400060: transform36
+    400062: transform37
+    400064: transform41
+    400066: transform42
+    400068: transform43
+    400070: transform44
+    400072: transform45
+    400074: transform46
+    400076: transform47
+    2300000: pSphere7
+    3300000: pSphere7
+    4300000: ClunkyRobot
+    4300002: pSphere7
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: ClunkyRobot
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

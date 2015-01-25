@@ -1,0 +1,1599 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!74 &7400000
+AnimationClip:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: sitidle
+  serializedVersion: 4
+  m_AnimationType: 2
+  m_Compressed: 0
+  m_UseHighQualityCurve: 1
+  m_RotationCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.355545759, y: -.00332151027, z: .0136356829, w: .934435546}
+        inSlope: {x: -.073589772, y: .000628362759, z: -.00257961801, w: -.0279473346}
+        outSlope: {x: -.073589772, y: .000628362759, z: -.00257961801, w: -.0279473346}
+        tangentMode: 0
+      - time: 1
+        value: {x: -.4300026, y: -.00244288985, z: .0100287059, w: .902768672}
+        inSlope: {x: -.0739462823, y: .00111346459, z: -.00457103737, w: -.0351685435}
+        outSlope: {x: -.0739462823, y: .00111346459, z: -.00457103737, w: -.0351685435}
+        tangentMode: 1054124314
+      - time: 1.20833302
+        value: {x: -.444928557, y: -.00220768154, z: .00906311814, w: .895563066}
+        inSlope: {x: -.0696388781, y: .00114921376, z: -.00471780822, w: -.0341849253}
+        outSlope: {x: -.0696388781, y: .00114921376, z: -.00471780822, w: -.0341849253}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .348013937, y: .00316046621, z: .00632093288, w: .937340438}
+        inSlope: {x: .0626757815, y: .00433086324, z: .00866172835, w: -.0233285557}
+        outSlope: {x: .0626757815, y: .00433086324, z: .00866172835, w: -.0233285557}
+        tangentMode: 0
+      - time: 1
+        value: {x: .410220712, y: .0081453491, z: .0162907001, w: .911804438}
+        inSlope: {x: .0602505133, y: .00546765886, z: .0109353177, w: -.0273500532}
+        outSlope: {x: .0602505133, y: .00546765886, z: .0109353177, w: -.0273500532}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .422855616, y: .00930929836, z: .0186185986, w: .905931294}
+        inSlope: {x: .0606871732, y: .00567469001, z: .0113493782, w: -.028818626}
+        outSlope: {x: .0606871732, y: .00567469001, z: .0113493782, w: -.028818626}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .00413327105, y: .000890326453, z: .0229258761, w: .999845147}
+        inSlope: {x: .054075703, y: .000661180413, z: .0170253851, w: -.000685886363}
+        outSlope: {x: .054075703, y: .000661180413, z: .0170253851, w: -.000685886363}
+        tangentMode: 0
+      - time: .916666985
+        value: {x: .0467036478, y: .00150839821, z: .0388412513, w: .998152256}
+        inSlope: {x: .0398082808, y: .000650647213, z: .0167542472, w: -.00251482008}
+        outSlope: {x: .0398082808, y: .000650647213, z: .0167542472, w: -.00251482008}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .0585427508, y: .00169738987, z: .0437078066, w: .997302651}
+        inSlope: {x: .0404715352, y: .000640191603, z: .0164849907, w: -.0032037911}
+        outSlope: {x: .0404715352, y: .000640191603, z: .0164849907, w: -.0032037911}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.0458877832, y: 0, z: 0, w: .998554587}
+        inSlope: {x: .0656864867, y: -0, z: 0, w: .00304885744}
+        outSlope: {x: .0656864867, y: -0, z: 0, w: .00304885744}
+        tangentMode: 0
+      - time: .916666985
+        value: {x: .0179953016, y: -0, z: -0, w: .999838114}
+        inSlope: {x: .0664555877, y: 0, z: 0, w: -.00119518326}
+        outSlope: {x: .0664555877, y: 0, z: 0, w: -.00119518326}
+        tangentMode: -1128291307
+      - time: 1.20833302
+        value: {x: .0373260155, y: 0, z: 0, w: .999264479}
+        inSlope: {x: .0645301715, y: 0, z: 0, w: -.00255847047}
+        outSlope: {x: .0645301715, y: 0, z: 0, w: -.00255847047}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck/basemesh_arshlevon_skinny:headtop
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck/basemesh_arshlevon_skinny:headtop/basemesh_arshlevon_skinny:chin
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .458089888, y: .0999488756, z: -.418915987, w: .777248919}
+        inSlope: {x: -.0642980784, y: -.0699402168, z: .0021546653, w: .0471901782}
+        outSlope: {x: -.0642980784, y: -.0699402168, z: .0021546653, w: .0471901782}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .402602792, y: .0084204888, z: -.39021337, w: .827845693}
+        inSlope: {x: -.0235994086, y: -.0713357031, z: .0449589938, w: .0341405049}
+        outSlope: {x: -.0235994086, y: -.0713357031, z: .0449589938, w: .0341405049}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .0220658481, y: -.379687071, z: .109092526, w: .918426037}
+        inSlope: {x: .0026012247, y: -.0125150606, z: .00274626771, w: -.0056038294}
+        outSlope: {x: .0026012247, y: -.0125150606, z: .00274626771, w: -.0056038294}
+        tangentMode: 0
+      - time: .75
+        value: {x: .0248390641, y: -.392699242, z: .111910418, w: .9124946}
+        inSlope: {x: .00476183277, y: -.0218937006, z: .00468905503, w: -.010126628}
+        outSlope: {x: .00476183277, y: -.0218937006, z: .00468905503, w: -.010126628}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .027325483, y: -.403859973, z: .114268258, w: .907241821}
+        inSlope: {x: .00604484975, y: -.0265291501, z: .00552977622, w: -.0126921507}
+        outSlope: {x: .00604484975, y: -.0265291501, z: .00552977622, w: -.0126921507}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .68086791, y: 0, z: 0, w: .732457459}
+        inSlope: {x: .0287560523, y: 0, z: 0, w: -.0267230291}
+        outSlope: {x: .0287560523, y: 0, z: 0, w: -.0267230291}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .740126669, y: 0, z: 0, w: .672466934}
+        inSlope: {x: .0619690828, y: 0, z: 0, w: -.0681751296}
+        outSlope: {x: .0619690828, y: 0, z: 0, w: -.0681751296}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L/basemesh_arshlevon_skinny:wrist_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L/basemesh_arshlevon_skinny:wrist_L/basemesh_arshlevon_skinny:hand_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .45356214, y: .299834728, z: .0762472451, w: -.835373878}
+        inSlope: {x: .0744246021, y: -.0393952057, z: .0356394835, w: .0305362754}
+        outSlope: {x: .0744246021, y: -.0393952057, z: .0356394835, w: .0305362754}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .5340662, y: .253415912, z: .12847805, w: -.796073675}
+        inSlope: {x: .0504317172, y: -.0362316072, z: .0492984019, w: .0292682983}
+        outSlope: {x: .0504317172, y: -.0362316072, z: .0492984019, w: .0292682983}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.00393163553, y: -.0948771387, z: .0308494866, w: .994584918}
+        inSlope: {x: -.000778617512, y: -.101306565, z: .0318880863, w: -.0113254758}
+        outSlope: {x: -.000778617512, y: -.101306565, z: .0318880863, w: -.0113254758}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -.00044579478, y: -.21586436, z: .0673451573, w: .974026024}
+        inSlope: {x: .0064645661, y: -.0925315917, z: .0264375377, w: -.0217155386}
+        outSlope: {x: .0064645661, y: -.0925315917, z: .0264375377, w: -.0217155386}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.727976203, y: 0, z: 0, w: .685546875}
+        inSlope: {x: .0212511383, y: 0, z: 0, w: .0224814638}
+        outSlope: {x: .0212511383, y: 0, z: 0, w: .0224814638}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -.704066277, y: 0, z: 0, w: .710125983}
+        inSlope: {x: .016721895, y: 0, z: 0, w: .0166505128}
+        outSlope: {x: .016721895, y: 0, z: 0, w: .0166505128}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R/basemesh_arshlevon_skinny:wrist_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R/basemesh_arshlevon_skinny:wrist_R/basemesh_arshlevon_skinny:hand_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .663485348, y: .613579631, z: -.321493149, w: .282598913}
+        inSlope: {x: .0226796176, y: .0261904653, z: .0519632101, w: -.0517479032}
+        outSlope: {x: .0226796176, y: .0261904653, z: .0519632101, w: -.0517479032}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .687925696, y: .643673897, z: -.254560113, w: .217856258}
+        inSlope: {x: .0171651971, y: .0228739679, z: .0572543554, w: -.0538942553}
+        outSlope: {x: .0171651971, y: .0228739679, z: .0572543554, w: -.0538942553}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.191190183, y: .676128685, z: .193241447, w: .684802234}
+        inSlope: {x: -.000227608718, y: .00035224919, z: 4.51183405e-05, w: -.000424461439}
+        outSlope: {x: -.000227608718, y: .00035224919, z: 4.51183405e-05, w: -.000424461439}
+        tangentMode: 0
+      - time: 1.125
+        value: {x: -.19146505, y: .676554441, z: .193295911, w: .684289396}
+        inSlope: {x: 5.90086802e-06, y: -8.58306885e-06, z: -1.25169618e-06, w: 1.07288524e-05}
+        outSlope: {x: 5.90086802e-06, y: -8.58306885e-06, z: -1.25169618e-06, w: 1.07288524e-05}
+        tangentMode: 1065353216
+      - time: 1.20833302
+        value: {x: -.191468999, y: .676560521, z: .193296671, w: .684282064}
+        inSlope: {x: -9.8944256e-05, y: .00015331278, z: 1.93210162e-05, w: -.000185061363}
+        outSlope: {x: -9.8944256e-05, y: .00015331278, z: 1.93210162e-05, w: -.000185061363}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L/basemesh_arshlevon_skinny:foot_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L/basemesh_arshlevon_skinny:foot_L/basemesh_arshlevon_skinny:foottip_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .261136383, y: -.798811436, z: -.0540940091, w: .53915751}
+        inSlope: {x: .0866854414, y: .00743829831, z: -.06842684, w: -.0359674208}
+        outSlope: {x: .0866854414, y: .00743829831, z: -.06842684, w: -.0359674208}
+        tangentMode: 0
+      - time: .0833339691
+        value: {x: .266646743, y: -.798331261, z: -.0594872162, w: .536682367}
+        inSlope: {x: .0444207713, y: .00392247876, z: -.0607846305, w: -.0229748189}
+        outSlope: {x: .0444207713, y: .00392247876, z: -.0607846305, w: -.0229748189}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .317273617, y: -.790480018, z: -.129210413, w: .507425725}
+        inSlope: {x: .0444615185, y: .00973005407, z: -.0615632161, w: -.0282228515}
+        outSlope: {x: .0444615185, y: .00973005407, z: -.0615632161, w: -.0282228515}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.242987782, y: .747543395, z: .198218852, w: .585529327}
+        inSlope: {x: -.00151066331, y: .0018408969, z: -7.80344089e-06, w: -.00297603663}
+        outSlope: {x: -.00151066331, y: .0018408969, z: -7.80344089e-06, w: -.00297603663}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -.244793549, y: .749735117, z: .198203936, w: .581969023}
+        inSlope: {x: -.0014189746, y: .00171572715, z: -1.62291544e-05, w: -.00280008349}
+        outSlope: {x: -.0014189746, y: .00171572715, z: -1.62291544e-05, w: -.00280008349}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R/basemesh_arshlevon_skinny:foot_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 0, y: 0, z: 0, w: 1}
+        inSlope: {x: 0, y: 0, z: 0, w: 0}
+        outSlope: {x: 0, y: 0, z: 0, w: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R/basemesh_arshlevon_skinny:foot_R/basemesh_arshlevon_skinny:foottip_R
+  m_CompressedRotationCurves: []
+  m_PositionCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.566660762, y: 4.00402451, z: -3.11770654}
+        inSlope: {x: -5.70967588e-15, y: 2.35419557e-05, z: -7.10537315e-14}
+        outSlope: {x: -1.33225747e-14, y: 3.55268657e-14, z: 1.17709778e-05}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -.566660643, y: 4.00402355, z: -3.11770535}
+        inSlope: {x: 1.14440937e-07, y: -9.15527494e-07, z: -5.49316474e-06}
+        outSlope: {x: 1.14440937e-07, y: -9.15527494e-07, z: -5.49316474e-06}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -2.49889834e-16, y: 1.09343123, z: .26634863}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -2.49889834e-16, y: 1.09343123, z: .26634863}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -2.87863141e-16, y: .813064277, z: -.406532139}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -2.87863141e-16, y: .813064277, z: -.406532139}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -6.70328587e-16, y: 1.44388998, z: -.0560733974}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -6.70328587e-16, y: 1.44388998, z: -.0560733974}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -5.02304673e-16, y: .925211072, z: .168220192}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -5.02304673e-16, y: .925211072, z: .168220192}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -6.12108095e-16, y: 1.38781655, z: .53269726}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -6.12108095e-16, y: 1.38781655, z: .53269726}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck/basemesh_arshlevon_skinny:headtop
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -3.19723677e-16, y: -1.44388998, z: .49064225}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -3.19723677e-16, y: -1.44388998, z: .49064222}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck/basemesh_arshlevon_skinny:headtop/basemesh_arshlevon_skinny:chin
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.03427231, y: -.0332418866, z: .0966290459}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1.03427231, y: -.0332418866, z: .0966290459}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1.89306641, y: -.162059009, z: -.052577991}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1.89306641, y: -.162059009, z: -.052577991}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 2.34038115, y: .0709595308, z: .744854867}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 2.34038115, y: .0709595308, z: .744854867}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L/basemesh_arshlevon_skinny:wrist_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .798294723, y: -.195138708, z: .411860943}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .798294723, y: -.195138708, z: .411860943}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L/basemesh_arshlevon_skinny:wrist_L/basemesh_arshlevon_skinny:hand_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -1.03427207, y: -.0332417674, z: .0966290459}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -1.03427207, y: -.0332417674, z: .0966290459}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -1.89307189, y: .162064001, z: .0525779203}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -1.89307201, y: .162064001, z: .0525779203}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -2.34036803, y: -.0709600002, z: -.744854391}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -2.34036803, y: -.0709600002, z: -.744854391}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R/basemesh_arshlevon_skinny:wrist_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.798304021, y: .195135996, z: -.411860794}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -.798304021, y: .195135996, z: -.411860794}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R/basemesh_arshlevon_skinny:wrist_R/basemesh_arshlevon_skinny:hand_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .714140415, y: -.146092579, z: -.00446324144}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .714140415, y: -.146092579, z: -.00446324144}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -3.38201332, y: -.00417359499, z: -.274302453}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -3.38201332, y: -.00417359499, z: -.274302453}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -3.83564115, y: -.427396834, z: .986564755}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -3.83564115, y: -.427396834, z: .986564755}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L/basemesh_arshlevon_skinny:foot_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.228006542, y: .394989282, z: -1.14865291}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -.228006557, y: .394989282, z: -1.14865291}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L/basemesh_arshlevon_skinny:foot_L/basemesh_arshlevon_skinny:foottip_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: -.714140832, y: -.146088332, z: -.00446320791}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: -.714140832, y: -.146088332, z: -.00446320791}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 3.38202095, y: .00417579757, z: .274302423}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 3.38202095, y: .00417579757, z: .274302423}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 3.83563852, y: .4273884, z: -.986565113}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 3.83563876, y: .4273884, z: -.986565113}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R/basemesh_arshlevon_skinny:foot_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: .228005201, y: -.394980252, z: 1.14865243}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: .228005201, y: -.394980252, z: 1.14865243}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R/basemesh_arshlevon_skinny:foot_R/basemesh_arshlevon_skinny:foottip_R
+  m_ScaleCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck/basemesh_arshlevon_skinny:headtop
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:neck/basemesh_arshlevon_skinny:headtop/basemesh_arshlevon_skinny:chin
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L/basemesh_arshlevon_skinny:wrist_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_L/basemesh_arshlevon_skinny:elbow_L/basemesh_arshlevon_skinny:wrist_L/basemesh_arshlevon_skinny:hand_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R/basemesh_arshlevon_skinny:wrist_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:spine1/basemesh_arshlevon_skinny:spine2/basemesh_arshlevon_skinny:spine3/basemesh_arshlevon_skinny:shoulder_R/basemesh_arshlevon_skinny:elbow_R/basemesh_arshlevon_skinny:wrist_R/basemesh_arshlevon_skinny:hand_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L/basemesh_arshlevon_skinny:foot_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_L/basemesh_arshlevon_skinny:knee_L/basemesh_arshlevon_skinny:foot_L/basemesh_arshlevon_skinny:foottip_L
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R/basemesh_arshlevon_skinny:foot_R
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      - time: 1.20833302
+        value: {x: 1, y: 1, z: 1}
+        inSlope: {x: 0, y: 0, z: 0}
+        outSlope: {x: 0, y: 0, z: 0}
+        tangentMode: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+    path: basemesh_arshlevon_skinny:root/basemesh_arshlevon_skinny:hip_R/basemesh_arshlevon_skinny:knee_R/basemesh_arshlevon_skinny:foot_R/basemesh_arshlevon_skinny:foottip_R
+  m_FloatCurves: []
+  m_PPtrCurves: []
+  m_SampleRate: 24
+  m_WrapMode: 4
+  m_Bounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
+  m_ClipBindingConstant:
+    genericBindings:
+    - path: 3019009815
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3019009815
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1725908166
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2029207318
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2372774215
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2940281805
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3077286660
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3330145650
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1431183022
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 67897690
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3308607752
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2066531690
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1317952368
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2166618121
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3042514677
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1725908166
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2029207318
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2372774215
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2905336420
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2412522248
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2669687275
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2940281805
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3077286660
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3330145650
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1476121219
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1431183022
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 67897690
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3308607752
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1365484768
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2066531690
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1317952368
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1620002323
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 396425521
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2166618121
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3042514677
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 171180367
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 587173588
+      attribute: 1
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2905336420
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2412522248
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2669687275
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1476121219
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1365484768
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1620002323
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 396425521
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 171180367
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 587173588
+      attribute: 2
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3019009815
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1725908166
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2029207318
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2372774215
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2905336420
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2412522248
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2669687275
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2940281805
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3077286660
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3330145650
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1476121219
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1431183022
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 67897690
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3308607752
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1365484768
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2066531690
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1317952368
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 1620002323
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 396425521
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 2166618121
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 3042514677
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 171180367
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    - path: 587173588
+      attribute: 3
+      script: {fileID: 0}
+      classID: 4
+      customType: 0
+      isPPtrCurve: 0
+    pptrCurveMapping: []
+  m_AnimationClipSettings:
+    serializedVersion: 2
+    m_StartTime: 0
+    m_StopTime: 1.20833302
+    m_OrientationOffsetY: 0
+    m_Level: 0
+    m_CycleOffset: 0
+    m_LoopTime: 1
+    m_LoopBlend: 0
+    m_LoopBlendOrientation: 1
+    m_LoopBlendPositionY: 1
+    m_LoopBlendPositionXZ: 1
+    m_KeepOriginalOrientation: 0
+    m_KeepOriginalPositionY: 1
+    m_KeepOriginalPositionXZ: 0
+    m_HeightFromFeet: 0
+    m_Mirror: 0
+  m_EditorCurves: []
+  m_EulerEditorCurves: []
+  m_Events: []
