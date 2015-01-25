@@ -76,7 +76,6 @@ public class SynchronisedPlayback : MonoBehaviour {
 			RemPlay(currentData.animationName, currentData.cameraIndex, currentData.startTime, currentData.endTime);
 		}
 	}
-
 	[RPC]
 	void RemPlay(string name, int cameraIndex, float startTime, float endTime) {
 		if(!animation.isPlaying) {
@@ -86,7 +85,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 		index = cameraIndex;
 		camManager.SetCamera(cameraIndex);
 		curState = animation[name];
-		curState.time = startTime;
+		//curState.time = startTime;
 		targetSpeed = 1;
 	}
 	public void Pause() {
@@ -99,6 +98,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[RPC]
 	void RemPause() {
 		targetSpeed = 0;
+
 	}
 	
 	public void Rewind() {
@@ -157,6 +157,8 @@ public class SynchronisedPlayback : MonoBehaviour {
 
 	void Update() {
 		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
+			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
+		} else if(curState != null && Network.peerType == NetworkPeerType.Disconnected) {
 			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
 		}
 		/*

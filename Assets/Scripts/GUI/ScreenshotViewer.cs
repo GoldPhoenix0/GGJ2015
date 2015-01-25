@@ -71,8 +71,6 @@ public class ScreenshotViewer : MonoBehaviour {
 
 	void Update() {
 		if(imageObj.activeInHierarchy) {
-
-
 			RectTransform trans = imageObj.GetComponent<RectTransform>();
 			Vector2 curDelta = trans.sizeDelta;
 			curDelta.y = Mathf.Lerp (curDelta.y, targetScale, Time.deltaTime * 2);
@@ -91,6 +89,9 @@ public class ScreenshotViewer : MonoBehaviour {
 	}
 
 	public void DismissData() {
+		if(!imageObj.activeInHierarchy) {
+			return;
+		}
 		foreach(Button butt in CurButts) {
 			Destroy(butt.gameObject);
 		}

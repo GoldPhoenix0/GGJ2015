@@ -21,6 +21,6 @@ public class PlayFootageTrigger : MonoBehaviour
         sync.SelectFootage(metadata);
 
         // Close the dialog when the button is pressed
-        this.gameObject.SetActive(false);
+        //this.gameObject.SetActive(false);
     }
 }
