@@ -10,6 +10,7 @@ public class ScrollableList : MonoBehaviour
     public GameObject itemPrefab;
     public int itemCount = 10, columnCount = 1;
     [SerializeField]private PopulateDetailedView detailedView;
+    [SerializeField]private DatabaseManager dbManager;
     private RectTransform rowRectTransform, containerRectTransform;
 
     void Start()
@@ -56,16 +57,16 @@ public class ScrollableList : MonoBehaviour
             //create a new item, name it, and set the parent
             GameObject newItem = Instantiate(itemPrefab) as GameObject;
             newItem.name = results[i] + "Button";
-            newItem.transform.SetParent(gameObject.transform);
+            newItem.transform.SetParent(gameObject.transform, false);
 
             // Set the title of the button as the result
             //newItem.GetComponent<Button>().guiText.text = results[i];
 
-            newItem.GetComponentInChildren<Text>().text = results[i];
+            GeneralMetadata item = dbManager.GetMetadata(results[i]);
+            //newItem.GetComponentInChildren<Text>().text = results[i];
 
             // Adds the listener and sets the detailed view in the button
-            newItem.AddComponent<DynamicButtonOnClickListener>()
-                .SetDetailedView(detailedView);
+            newItem.GetComponent<DynamicButtonOnClickListener>().SetDetailedView(detailedView, item);
 
             //move and size the new item
             RectTransform rectTransform = newItem.GetComponent<RectTransform>();

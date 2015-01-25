@@ -14,9 +14,16 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[SerializeField] DetectableObjectRegistry detectionRegistry;
 	[SerializeField] ScreenshotViewer viewer;
 	[SerializeField] DatabaseManager dbm;
+	[SerializeField] UnityEngine.UI.Text nameText;
+	[SerializeField] MessagePasser messages;
 	public void TakeScreenshot() {
-		// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
-		networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
+		if(Network.peerType == NetworkPeerType.Disconnected) {
+			ConfirmScreenshotPosition(curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
+		} else {
+			// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
+			networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
+		}
+
 	}
 
 	[RPC]
@@ -42,6 +49,18 @@ public class SynchronisedPlayback : MonoBehaviour {
 
 	public void SelectFootage(GeneralMetadata data) {
 		currentData = data;
+		nameText.text = data.title;
+		animation.Play(currentData.animationName);
+		curState = animation[currentData.animationName];
+		curState.speed = 0;
+		curState.time = currentData.startTime;
+		index = currentData.cameraIndex;
+		camManager.SetCamera(currentData.cameraIndex);
+		viewer.DismissData();
+		if(camManager.GetMode() == CameraManager.CameraMode.Hands) {
+			networkView.RPC("LoadFootage", RPCMode.Others, data.title);
+			messages.SendText("Now Viewing:\n" + data.title);
+		}
 	}
 
 	[RPC]
@@ -57,7 +76,6 @@ public class SynchronisedPlayback : MonoBehaviour {
 			RemPlay(currentData.animationName, currentData.cameraIndex, currentData.startTime, currentData.endTime);
 		}
 	}
-
 	[RPC]
 	void RemPlay(string name, int cameraIndex, float startTime, float endTime) {
 		if(!animation.isPlaying) {
@@ -67,7 +85,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 		index = cameraIndex;
 		camManager.SetCamera(cameraIndex);
 		curState = animation[name];
-		curState.time = startTime;
+		//curState.time = startTime;
 		targetSpeed = 1;
 	}
 	public void Pause() {
@@ -80,6 +98,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[RPC]
 	void RemPause() {
 		targetSpeed = 0;
+
 	}
 	
 	public void Rewind() {
@@ -139,14 +158,17 @@ public class SynchronisedPlayback : MonoBehaviour {
 	void Update() {
 		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
 			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
+		} else if(curState != null && Network.peerType == NetworkPeerType.Disconnected) {
+			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
 		}
+		/*
 		if(Input.GetKeyDown(KeyCode.S)) {
 			if(Network.peerType == NetworkPeerType.Disconnected) {
 				ConfirmScreenshotPosition(curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
 			} else {
 				TakeScreenshot();
 			}
-		}
+		}*/
 		if(Network.peerType == NetworkPeerType.Disconnected && curState != null) {
 			UpdateNormalisedTime(curState.normalizedTime, curState.time);
 		}

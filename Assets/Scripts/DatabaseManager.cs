@@ -122,7 +122,7 @@ public class DatabaseManager : MonoBehaviour
                 if(vals[3] != "")
                 {
                     //split keywords into comma separated items
-                    entry.keywords = line.Split(',');
+                    entry.keywords = vals[3].Split(',');
                 }
                 else
                 {
@@ -149,7 +149,7 @@ public class DatabaseManager : MonoBehaviour
                 {
                     entry.animationName = vals[6];
                 }
-                if(vals[7] == "" || int.TryParse(vals[7], out i))
+                if(vals[7] == "" || !int.TryParse(vals[7], out i))
                 {
                     entry.cameraIndex = -1;
                 }

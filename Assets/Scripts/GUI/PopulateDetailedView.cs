@@ -21,6 +21,12 @@ public class PopulateDetailedView : MonoBehaviour
         if(item.icon != null)
         {
             icon.texture = item.icon;
+            icon.gameObject.SetActive(true);
+        }
+        else
+        {
+            icon.gameObject.SetActive(false);
+            icon.texture = null;
         }
 
         if(item.startTime >= 0 && item.endTime >= 0 &&
@@ -34,12 +40,6 @@ public class PopulateDetailedView : MonoBehaviour
         {
             videoButton.SetActive(false);
         }
-      
-        //adjust the height of the container so that it will just barely fit all its children
-        /*float scrollHeight = body.rectTransform.rect.height;
-        contentView.offsetMin = new Vector2(contentView.offsetMin.x, -scrollHeight / 2);
-        contentView.offsetMax = new Vector2(contentView.offsetMax.x, scrollHeight / 2);
-        */
 
         this.gameObject.SetActive(true);
     }

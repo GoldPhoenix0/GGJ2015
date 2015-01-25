@@ -1,9 +1,6 @@
-# Heading ^Main content^Img link (e.g. ArchiveImg/cutecat.jpg)^
-^^^^|Magnacode AI: Amadeus Division
-34 Kaola street, Amadeus Solar City, Northern Territory
-
-Employee list 2070-2075^Magnacode AI: Amadeus Division
-34 Kaola street, Amadeus Solar City, Northern Territory
+#Heading ^Main content^Img link (e.g. ArchiveImg/cutecat.jpg)^Keywords (comma to separate)^Start Animation Time^End Animation Time^Animation Name^Camera Index^End Section
+Magnacode: Employee 010^"Magnacode AI: Amadeus Division
+34 Kaola street, Amadeus Solar City
 
 Employee list 2070-2075
 
@@ -42,10 +39,13 @@ See accompanying SARA documentation.
 
 > 3 SYM Chassis models
 
-> 3 SUB Chassis models
-^^
-^^^^|SARA documentation^⅛ Files Available:
-NILS/SAR-550-010
+> 3 SUB Chassis models"^^^^^^^
+|Magnacode: Employee 010^"SARA documentation
+
+File 1 of 8
+
+SAR-550-010
+
 CREATED: 2/03/2068
 DECOMMISSIONED: 9/09/2073
 HEIGHT and WEIGHT are STANDARD as per regular SARA Chassis. No external modifications.
@@ -53,24 +53,84 @@ CARER #010 NOTES:
 Nils is very passionate about art as a form of self-validation. Enjoys being pointed out when they’re wrong, very fond of the phrase, to err is human. Keen on earning their rights within society and ensure those rights are available to all AIs, interested in similar processes within history and the kinds of people who have led to change occurring. A little self-absorbed and superior, but a lot of potential for growth.
 [REDACTED], February 2072
 
-Nils submitted artwork to a gallery for the first time. They were incredibly nervous. It was accepted, which garnered a lot of excitement at first, but the reviews killed the mood somewhat. ‘Rudimentary', 'primitive', and 'good for a robot' was some of the most prominent feedback. Nils is determined to just be good. In response to all the public criticism they’ve been drawn more into the AI rights movement, which Magnacore is supporting for all their creations, of course. They’re a lot happier getting more time to themselves this way. While Nils and the other AIs are all very conscious of wanting to appear relatable to humans, they relate to each other even more.
+Nils submitted artwork to a gallery for the first time. They were incredibly nervous. It was accepted, which garnered a lot of excitement at first, but the reviews killed the mood somewhat. ‘Rudimentary', 'primitive', and 'good for a robot' was some of the most prominent feedback. Nils is determined to just be good. In response to all the public criticism they’ve been drawn more into the AI rights movement, meeting more models like them. They’re a lot happier getting more time to themselves this way. While Nils and the other AIs are all very conscious of wanting to appear relatable to humans, they relate to each other even more.
+Magnacode doesn’t seem happy with the situation, but Nils is still performing their other duties, so they can’t complain.
 [REDACTED], July 2072
 
 Nils was featured in Titanium Angels Magazine. The interviewers were quite lovely, and Nils was over the moon about more people showing interest in their artwork and life perspective. Definitely a recent highlight, even if it’s not a very mainstream publication.
-Political pressure over the matters of AI rights continues and some AI here have been incredibly upset at being confronted with protestors, but Nils has just gotten more stubborn.
+Political pressure over the matters of AI rights continues and some AI here have been incredibly upset at being confronted with protesters, but Nils has just gotten more stubborn.
 [REDACTED], April 2073
 
-Everything is very busy right now. First signs of some kind of infection have shown today. Short-term memory loss, vision malfunctions. The biotic side appears to be at fault, but cause is unknown. Nils has been separated from the other AIs and main power system while the investigation is ongoing.
-[REDACTED], May 2073
+Everything is very busy right now. The media is finally covering some of the Robot Rights issues, which has brought as much negative attention as positive, including Magnacode’s ire. Nils received some threats so we’ve moved them to a safe house. Robot servitude is so ingrained in everyday functions that I’m not sure we’ll make a dent in the legal system no matter how good our arguments are, but Nils is determined to try, and I’m here to help.
+[REDACTED], May 2073"^^^^^^^
+|Titanium Angels Magazine^"TITANIUM ANGELS MAGAZINE
+APRIL ISSUE
+MEET THE SPEARHEAD OF THE AI RIGHTS MOVEMENT
+Nils from Magnacode talks to us about art and life on the synthetic side!
 
-Without Nils, the AI rights hearing has been pushed back again. Despite precautions, other AIs have been infected. Servernetic Models Incorporated is claiming to suffer from malware too and traced the transmission back to a protocol drone that visited our centre here. It can’t possibly be the same virus since their chassis don’t use biotic components the way ours do; but our NDAs don’t allow us to share information on the matter.
-[REDACTED], June 2073
+We use robots in our lives for more complex tasks every day. As demand grows, so does their potential, but so rarely do we stop to actually realise what our demand has produced. Nils here is one of the most advanced models on the market; capable of the same creative, heuristic thought as humans, their potential completely outstripping previous expectations. 
 
-Magnacore has decided that keeping the information on AI brains private is more important than setting the record straight with SM inc. and the general public, or collaborating on a cure. Their approval ratings are down due to being seen as the source of the malware, and some harsh budget cuts have been made. I have my job here for as long as Nils needs a carer.
-Nils has become less and less lucid as the virus progressed. Progress towards finding a solution is underway, and Nils has a stubborn will, but there’s only so much time left before they are beyond repair and recovery. I am encouraging them to keep up with their art when they are able to.
-[REDACTED], July 2073
+So Nils, you’re a philosopher, robot rights advocate, and even an artist. What got you interested in these pursuits to begin with? Experiences on the job?
 
-Nils has been ‘decommissioned’. Infected models are being retired--their conditions have been slowed down, but not cured. Some AIs think that it was sabotage. No one really knows how Nils was infected so the rumour won’t die down. But since all the service robots are back to normal, most people aren’t interested.
-The company’s interests remain strong, however, thanks to being spaced out across multiple independent divisions. Magnacore has given me permission to keep a few pieces of Nil’s art for myself. Some pieces will be sold to raise money for charities that Nils had shown support for in their time, and some will be displayed in Magnacore’s centres in memoriam. I’m sure Nils would have liked the attention, though not quite as much as living to see those AI rights pushed forwards.
-[REDACTED], September 2073
-^sara.jpg^^^^^|4892763nils_pz.ftg^Footage from the other box's pov^^^0^100^WalkAndNot^1
+NILS: Yes, I suppose once I had adjusted to each new task I was given, I started getting bored of it all. I wanted challenges, I wanted to learn and change. Even when I’m overburdened with tasks, I still find philosophy and art so much more interesting. Doesn’t any human?
+
+Good point Nils! I suppose the curiousity of your brain is that you were initially designed to specialise in analytical tasks, not artistic.
+
+NILS: Artistic is analytical. It’s just not only about taking information in and spitting it back out again like a rubik’s cube, it’s interpreting your environment in different ways, understanding every possibility before you. I want my artwork to share my interpretation of the world with others and bridge gaps of understanding, and raise questions of my own that others may be able to answer for me.
+
+That’s a very engaging approach, an inviting attitude that makes your artwork particularly accessible to newcomers.
+
+NILS: Thank you! I’m very glad you think so.
+
+So what’s your favourite medium?
+
+
+NILS: I think sculpture is--it’s more real, can be viewed in so many different lights. I don’t just want to make traditional sculptures, either, I want some digital elements present as well. I wouldn’t be complete without that myself, after all.
+
+We can’t wait to see your next gallery installment, with those kinds of ideas brewing! Thank you so much for sharing your time with us.
+
+NILS: And the same to you."^^titanium angels,Nils interview^^^^^
+|34 Kaola street^PROPERTY OF MAGNACODE. BUILDING PLAN REDACTED FROM PUBLIC VIEWING.^^34 Kaola street,Magnacode AI: Amadeus Division^^^^^
+|RESOURCE LIST^"Uncorrupted files from NILS/SAR-550-010 visual feed on the day of abduction provided.
+Security feeds from building of last known location provided.
+Last known location REDACTED according to local property ownership laws.
+MAGNACODE files relating to NILS/SAR-550-010 available upon request.
+MAGNACODE employee information REDACTED according to local individual privacy laws."^^resources,NILS/SAR-550-010,MAGNACODE^^^^^
+|Start File^"--- Welcome Operator 525-002 ---
+
+--- Log-in authentication accepted ---
+
+Situation Summary
+
+MAGNACODE Property coded NILS/SAR-550-010 missing after damage to property was inflicted. Video feeds corrupted by sabotage and cut off. Tracking devices non-functional. Unknown parties involved in the sabotage and abduction of robot chassis. 
+
+Mission Statement
+
+Discover state of robot chassis NILS/SAR-550-010 and provide MAGNACODE with information for its recovery.
+
+Disclaimer
+
+* DO NOT SHARE WITH AGENT *
+
+Sabotage of robot chassis NILS/SAR-550-010 involves the use of malware potentially compatible with MAGNACODE human augmentation products.
+
+This information is CLASSIFIED and must not be revealed to any persons employed in any company or public service, public and private sources of media or general citizens excepting strictly upon the request of official Enforcement in accordance with the local law.
+
+Due to threat of virus compatibility with human augmentation, AGENT working in conjunction with OPERATOR is vulnerable. This information is CLASSIFIED. Upon any sign of malfunctions or mental degradation as a result of infection, AGENT’S augmentation is to be DE-ACTIVATED IMMEDIATELY with the safe code provided."^^mission brief,mission,malware,disclaimer^0^100^WalkAndNot^0
+|Global Tech Review^"Excerpt from PG 23 of GLOBAL TECH REVIEW, 18/5/2073
+
+According to MAGNACODE’s CEO: ‘Servernetic Models Inc. are only in support of the robot rights movement because if individual synthetics were in control of their own bodies, they would be able to ignore their parent company’s wishes and share their brain’s codes with others. Servernetic Models Inc. would suddenly have a chance at stealing MAGNACODE’s intellectual property, and we would lose the edge we have on the entire industry of advanced proccessing units. They’re not selfless social advocates. It’s a front for entirely petty corporate maneuvering.’
+"^^global tech,MAGNACODE,Servernetic Models Incorporated^^^^^
+|Package Address^"MAP OF LOCAL PUBLIC NEIGHBORHOOD TRAFFIC FOOTAGE
+Courtesy of Amadeus Solar City Council
+
+West Loridon Street camera F serial: WLS-F008
+West Loridon Street camera G serial: WLS-G008
+East Loridon Street camera A serial: ELS-A008
+East Loridon Street camera B serial: ELS-B008
+"^map1.png^5 Loridon street^^^^^
+|WLS-F008^FOOTAGE NOT AVAILABLE^^^^^^
+|WLS-G008^FOOTAGE NOT AVAILABLE^^^^^^
+|ELS-A008^FOOTAGE AVAILABLE^^^^^^
+|ELS-B008^FOOTAGE NOT AVAILABLE^^^^^^
+|DEL514^INDOOR CAMERA FOOTAGE^^^^^^

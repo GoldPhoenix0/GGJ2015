@@ -20,10 +20,7 @@ public class PlayFootageTrigger : MonoBehaviour
 
         sync.SelectFootage(metadata);
 
-        /*metadata.startTime;
-        metadata.endTime;
-        metadata.animationName;
-        metadata.cameraIndex;
-        */
+        // Close the dialog when the button is pressed
+        //this.gameObject.SetActive(false);
     }
 }
