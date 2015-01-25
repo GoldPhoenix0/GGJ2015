@@ -6,7 +6,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	// This has animationclips (Unity internal? Or maybe a collection of linked ones? Lower level anyway)
 	// It connects with a remote UI, which commands start, pause, rewind, fastforward.
 
-	AnimationState curState;
+	//AnimationState curState;
 
 	float targetSpeed;
 	int index;
@@ -18,7 +18,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[SerializeField] MessagePasser messages;
 	public void TakeScreenshot() {
 		if(Network.peerType == NetworkPeerType.Disconnected) {
-			ConfirmScreenshotPosition(curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
+			ConfirmScreenshotPosition(AnimatorTimeline.runningTime, index, camManager.GetCurrentCameraOffset(), AnimatorTimeline.nowPlayingTake);
 		} else {
 			// This sends a signal through to the other player, which uses the camManager to get the current look direction and sends back the information.
 			networkView.RPC("RequestScreenshot", RPCMode.Others, Network.player);
@@ -29,7 +29,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	[RPC]
 	void RequestScreenshot(NetworkPlayer player) {
 		// This should find the current position and direction of the camera, and send them back to the other player
-		networkView.RPC("ConfirmScreenshotPosition", player, curState.time, index, camManager.GetCurrentCameraOffset(), curState.name);
+		networkView.RPC("ConfirmScreenshotPosition", player, AnimatorTimeline.runningTime, index, camManager.GetCurrentCameraOffset(), AnimatorTimeline.nowPlayingTake);
 	}
 
 	[RPC]
@@ -99,7 +99,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemPause() {
-		targetSpeed = 0;
+		AnimatorTimeline.Pause();
 
 	}
 	
@@ -172,10 +172,10 @@ public class SynchronisedPlayback : MonoBehaviour {
 				TakeScreenshot();
 			}
 		}*/
-		if(Network.peerType == NetworkPeerType.Disconnected && curState != null) {
+		if(Network.peerType == NetworkPeerType.Disconnected) {
 			UpdateNormalisedTime(AnimatorTimeline.runningTime / AnimatorTimeline.totalTime, AnimatorTimeline.runningTime);
 		}
-		if(camManager.GetMode() == CameraManager.CameraMode.Eyes && curState != null) {
+		if(camManager.GetMode() == CameraManager.CameraMode.Eyes) {
 			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, AnimatorTimeline.runningTime / AnimatorTimeline.totalTime, AnimatorTimeline.runningTime);
 		}
 

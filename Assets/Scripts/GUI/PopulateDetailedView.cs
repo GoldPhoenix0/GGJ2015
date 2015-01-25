@@ -29,8 +29,7 @@ public class PopulateDetailedView : MonoBehaviour
             icon.texture = null;
         }
 
-        if(item.startTime >= 0 && item.endTime >= 0 &&
-           item.animationName != "" && item.cameraIndex >= 0)
+        if(item.animationName != "" && item.cameraIndex >= 0)
         {
             // Send the button the metadata file
             videoButton.GetComponent<PlayFootageTrigger>().SetMetadata(item);

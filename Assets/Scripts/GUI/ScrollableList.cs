@@ -48,6 +48,7 @@ public class ScrollableList : MonoBehaviour
         int j = 0;
         for (int i = 0; i < itemCount; i++)
         {
+			Debug.Log(results[i]);
             //this is used instead of a double for loop because itemCount may not fit perfectly into the rows/columns
             if (i % columnCount == 0)
             {

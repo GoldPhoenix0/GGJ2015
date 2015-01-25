@@ -157,7 +157,7 @@ public class DatabaseManager : MonoBehaviour
                 {
                     entry.cameraIndex = i;
                 }
-                
+				entry.title = entry.title.Trim();
                 // add item to the database
                 database.Add(entry.title, entry);
             }
