@@ -114,7 +114,6 @@ GameObject:
   - 224: {fileID: 22426442}
   - 222: {fileID: 22226444}
   - 114: {fileID: 11426438}
-  - 114: {fileID: 11426436}
   m_Layer: 5
   m_Name: BackgroundSolid
   m_TagString: Untagged
@@ -572,23 +571,6 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.Scrollbar+ScrollEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &11426436
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 126442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03ab00ba99d52594181c4ad6140ae917, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoButton: {fileID: 0}
-  dbManager: {fileID: 0}
-  contentView: {fileID: 0}
-  title: {fileID: 0}
-  body: {fileID: 0}
-  icon: {fileID: 0}
 --- !u!114 &11426438
 MonoBehaviour:
   m_ObjectHideFlags: 1
