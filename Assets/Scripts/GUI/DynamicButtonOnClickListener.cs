@@ -5,25 +5,30 @@ using System.Collections;
 public class DynamicButtonOnClickListener : MonoBehaviour 
 {
     private Button button;
-    private Text title;
     private PopulateDetailedView detailedView = null;
+    private GeneralMetadata metadata;
+    [SerializeField]private Text title;
+    [SerializeField]private Text body;
 
     // Use this for initialization
     void Start () 
     {
         button = this.GetComponent<Button>();
-        title = this.GetComponentInChildren<Text>();
 
         button.onClick.AddListener(() => { OnButtonClicked(); }); 
     }
 
-    public void SetDetailedView(PopulateDetailedView detail)
+    public void SetDetailedView(PopulateDetailedView detail, GeneralMetadata meta)
     {
         detailedView = detail;
+        metadata = meta;
+
+        title.text = metadata.title;
+        body.text = metadata.body;
     }
     
     public void OnButtonClicked()
     {
-        detailedView.InitialiseDetailedView(title.text);
+        detailedView.InitialiseDetailedView(metadata.title);
     }
 }
