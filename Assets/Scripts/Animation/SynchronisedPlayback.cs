@@ -36,10 +36,13 @@ public class SynchronisedPlayback : MonoBehaviour {
 	void ConfirmScreenshotPosition(float absTime, int camIndex, Quaternion rotationOffset, string name) {
 		// This should take a screenshot (turn it into a texture? Alongside pixel positions of all relevant objects?)
 		camManager.SetCamera(camIndex);
-		animation.Play(name);
-		curState = animation[name];
-		curState.time = absTime;
-		curState.speed = 0;
+		// Change it to use the other thing!
+		AnimatorTimeline.Play(name);
+		//animation.Play(name);
+		//curState = animation[name];
+		//curState.time = absTime;
+		//curState.speed = 0;
+		AnimatorTimeline.Pause();
 		camManager.SetCameraOffset(rotationOffset);
 		lastScreenshot = new ScreenshotWithMetadata(camManager.GetScreenshotCamera(), detectionRegistry);
 		viewer.SetData(lastScreenshot);
@@ -50,10 +53,8 @@ public class SynchronisedPlayback : MonoBehaviour {
 	public void SelectFootage(GeneralMetadata data) {
 		currentData = data;
 		nameText.text = data.title;
-		animation.Play(currentData.animationName);
-		curState = animation[currentData.animationName];
-		curState.speed = 0;
-		curState.time = currentData.startTime;
+		AnimatorTimeline.Play(data.animationName);
+		AnimatorTimeline.Pause();
 		index = currentData.cameraIndex;
 		camManager.SetCamera(currentData.cameraIndex);
 		viewer.DismissData();
@@ -78,13 +79,14 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemPlay(string name, int cameraIndex, float startTime, float endTime) {
-		if(!animation.isPlaying) {
-			animation.Play(name);
+		if(AnimatorTimeline.isPaused) {
+			AnimatorTimeline.Resume();
+		} else {
+			AnimatorTimeline.Play(name);
 		}
 		// Stop the animation, do some voodoo to treat start and end properly (trick out the absolute and relative time values)
 		index = cameraIndex;
 		camManager.SetCamera(cameraIndex);
-		curState = animation[name];
 		//curState.time = startTime;
 		targetSpeed = 1;
 	}
@@ -134,7 +136,8 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemStepForward() {
-		curState.time += 0.2f;
+
+		//curState.time += 0.2f;
 	}
 	public void StepBack() {
 		if(Network.peerType != NetworkPeerType.Disconnected) {
@@ -145,7 +148,7 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 	[RPC]
 	void RemStepBack() {
-		curState.time -= 0.2f;
+		//curState.time -= 0.2f;
 	}
 	public float synchronisedTime;
 	public float synchronisedAbsTime;
@@ -156,11 +159,11 @@ public class SynchronisedPlayback : MonoBehaviour {
 	}
 
 	void Update() {
-		if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
+		/*if(curState != null && camManager.GetMode() == CameraManager.CameraMode.Eyes) {
 			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
 		} else if(curState != null && Network.peerType == NetworkPeerType.Disconnected) {
 			curState.speed = Mathf.Lerp(curState.speed, targetSpeed, Time.deltaTime * 2);
-		}
+		}*/
 		/*
 		if(Input.GetKeyDown(KeyCode.S)) {
 			if(Network.peerType == NetworkPeerType.Disconnected) {
@@ -170,10 +173,10 @@ public class SynchronisedPlayback : MonoBehaviour {
 			}
 		}*/
 		if(Network.peerType == NetworkPeerType.Disconnected && curState != null) {
-			UpdateNormalisedTime(curState.normalizedTime, curState.time);
+			UpdateNormalisedTime(AnimatorTimeline.runningTime / AnimatorTimeline.totalTime, AnimatorTimeline.runningTime);
 		}
 		if(camManager.GetMode() == CameraManager.CameraMode.Eyes && curState != null) {
-			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, curState.normalizedTime, curState.time);
+			networkView.RPC ("UpdateNormalisedTime", RPCMode.Others, AnimatorTimeline.runningTime / AnimatorTimeline.totalTime, AnimatorTimeline.runningTime);
 		}
 
 	}
