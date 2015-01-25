@@ -159,7 +159,7 @@ public class DatabaseManager : MonoBehaviour
                 }
                 
                 // add item to the database
-                database.Add(entry.title, entry);
+                database.Add(entry.title.Trim(), entry);
             }
         }
     }

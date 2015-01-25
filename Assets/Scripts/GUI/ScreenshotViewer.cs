@@ -56,8 +56,8 @@ public class ScreenshotViewer : MonoBehaviour {
 			ButtonDataManager newDat = new ButtonDataManager(data.positions[i], data.data[i], detailPop);
 			managers.Add(newDat);
 			curButt.onClick.AddListener(newDat.DataPressed);
-			Debug.Log(data.positions[i]);
-			Debug.Log(curTrans.anchoredPosition);
+			//Debug.Log(data.positions[i]);
+			//Debug.Log(curTrans.anchoredPosition);
 		}
 		
 		if(targetScale < 10) {
